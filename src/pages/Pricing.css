@@ -1,0 +1,116 @@
+.pricing-page {
+    padding-top: 100px;
+}
+
+.pricing-hero {
+    text-align: center;
+}
+
+.pricing-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.pricing-subtitle {
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto 5rem;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing-card {
+    padding: 3rem 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card.active {
+    background: #E1D7E9;
+    color: black;
+}
+
+.pricing-card.active .period,
+.pricing-card.active .desc,
+.pricing-card.active .features li {
+    color: #555;
+}
+
+.pricing-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.period {
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+.desc {
+    color: #4b5563;
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+}
+
+.features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.95rem;
+    color: #4b5563;
+}
+
+.btn-get {
+    margin-top: auto;
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.pricing-card.active .btn-get {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-title {
+        font-size: 3rem;
+    }
+}

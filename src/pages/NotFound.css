@@ -1,0 +1,59 @@
+.notfound-page {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 15vw;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -5px;
+}
+
+.error-text {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: -2rem 0 2rem;
+}
+
+.error-badge {
+    border: 1px solid #3B82F6;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+}
+
+.error-badge p {
+    color: #3B82F6;
+    font-weight: 500;
+}
+
+.btn-back {
+    background: #D1C4E9;
+    color: black;
+    padding: 0.75rem 2rem;
+    border-radius: 100px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 25vw;
+    }
+
+    .error-text {
+        font-size: 2rem;
+    }
+
+    .error-badge {
+        padding: 1rem 2rem;
+    }
+}
