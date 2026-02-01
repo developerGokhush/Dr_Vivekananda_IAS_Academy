@@ -74,7 +74,7 @@ const Home = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="hero-actions"
                             >
-                                <Link to="https://cal.com/nanda-kishore-jvcbgm/30min" target="_blank" className="btn-hero-pill">
+                                <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="btn-hero-pill">
                                     Talk to Us <ArrowRight size={20} />
                                 </Link>
                             </motion.div>
@@ -172,10 +172,10 @@ const Home = () => {
                             {[
                                 { id: '01', imgSrc: "/assets/images/director2.jpeg", link: "/director", title: 'Our Director', desc: 'Guided by Dr. Vivekananda’s vision to mold aspirants into competent, ethical, and patriotic leaders for the nation.' },
                                 { id: '02', imgSrc: "/assets/images/courses-collage.png", link: "/courses", title: 'Our Courses', desc: 'Holistic preparation strategies including affordable coaching, personal mentorship, and rigorous testing modules.' },
-                                { id: '03', imgSrc: "/assets/images/lbsnaa-gate.png", link: "/testimonials", title: 'Our Testimonials', desc: 'Discover how our focused approach and disciplined environment have helped students achieve their IAS/IPS dreams.' },
-                                { id: '04', imgSrc: "/assets/images/academy-hero.png", link: "/accolades", title: 'Our Accolades', desc: 'Celebrating our legacy of excellence and the consistent success of our students in the Civil Services Examination.' }
+                                { id: '03', imgSrc: "/assets/images/lbsnaa-gate.png", link: "/gallery", state: { filter: "Testimonials" }, title: 'Our Testimonials', desc: 'Discover how our focused approach and disciplined environment have helped students achieve their IAS/IPS dreams.' },
+                                { id: '04', imgSrc: "/assets/images/academy-hero.png", link: "/gallery", state: { filter: "Accolades" }, title: 'Our Accolades', desc: 'Celebrating our legacy of excellence and the consistent success of our students in the Civil Services Examination.' }
                             ].map(item => (
-                                <NavLink key={item.id} to={item.link} className="more-about-us-card-large">
+                                <NavLink key={item.id} to={item.link} state={item?.state} className="more-about-us-card-large">
                                     {/* <span className="item-id">{item.id}</span> */}
                                     <img src={item.imgSrc} alt="Director" />
                                     <div className="more-about-us-content">

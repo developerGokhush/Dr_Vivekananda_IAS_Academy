@@ -273,6 +273,10 @@
         width: fit-content;
         font-size: 2rem;
     }
+
+    .footer-link-btn {
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 400px) {

@@ -2,7 +2,7 @@ export interface GalleryItem {
     id: string;
     image: string;
     desc: string;
-    tag: 'Toppers' | 'Podcasts' | 'Seminars' | 'Public Events' | 'All' | 'Testimonials';
+    tag: 'Toppers' | 'Podcasts' | 'Seminars' | 'Public Events' | 'All' | 'Testimonials' | 'Accolades';
     videoUrl?: string;
 }
 
@@ -21,8 +21,8 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: '3',
-        image: '/assets/gallery/toppers/With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.jpeg',
-        desc: 'With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.jpeg',
+        image: '/assets/gallery/toppers/With Mr Pawan Datta IAS.png',
+        desc: 'With Mr Pawan Datta IAS',
         tag: 'Toppers'
     },
     {
@@ -45,13 +45,13 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: '7',
-        image: '/assets/gallery/toppers/With Mr Pranav IAS Officer on Special Duty (OSD) in the Office of the Chief Secretary, West Bengal.jpeg',
-        desc: 'With Mr Pranav IAS Officer on Special Duty (OSD) in the Office of the Chief Secretary, West Bengal',
+        image: '/assets/gallery/toppers/With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.png',
+        desc: 'With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.',
         tag: 'Toppers'
     },
     {
         id: '8',
-        image: '/assets/gallery/toppers/With Shri Avula Ramesh Reddy Inspector General Police.jpeg',
+        image: '/assets/gallery/toppers/With Shri Avula Ramesh Reddy Inspector General Police.png',
         desc: 'With Shri Avula Ramesh Reddy Inspector General Police',
         tag: 'Toppers'
     },
@@ -129,20 +129,20 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'wa-6',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (1).jpeg',
-        desc: 'Special Guest Lecture',
-        tag: 'Seminars'
+        desc: 'Award at Telangana Today Event',
+        tag: 'Accolades'
     },
     {
         id: 'wa-7',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (2).jpeg',
-        desc: 'Award Ceremony Moments',
+        desc: 'Book Launch Moments',
         tag: 'Public Events'
     },
     {
         id: 'wa-8',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (3).jpeg',
-        desc: 'Civil Services Workshop',
-        tag: 'Seminars'
+        desc: 'Award at Seminar',
+        tag: 'Accolades'
     },
     {
         id: 'wa-9',
@@ -189,19 +189,19 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'wa-18',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.30 (1).jpeg',
-        desc: 'Cultural Event',
+        desc: 'Ted Talks',
         tag: 'Public Events'
     },
     {
         id: 'wa-19',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.30 (2).jpeg',
-        desc: 'Open House',
+        desc: 'Ted Talks',
         tag: 'Public Events'
     },
     {
         id: 'wa-22',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.31 (1).jpeg',
-        desc: 'Community Service',
+        desc: 'Ted Talks',
         tag: 'Public Events'
     },
     {
@@ -219,8 +219,8 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'wa-25',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.32.jpeg',
-        desc: 'Farewell Party',
-        tag: 'Public Events'
+        desc: 'Award at Ted Talks',
+        tag: 'Accolades'
     },
     {
         id: 'wa-26',

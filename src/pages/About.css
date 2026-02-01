@@ -44,12 +44,6 @@
     }
 }
 
-@media (max-width: 600px) {
-    .message-badge {
-        left: 20% !important;
-    }
-}
-
 .about-image-main {
     position: relative;
     border-radius: 40px;
@@ -193,5 +187,14 @@
 @media (max-width: 600px) {
     .message-badge {
         left: 25% !important;
+    }
+
+    .about-content {
+        text-align: justify;
+    }
+
+    .playButton {
+        height: 40px;
+        width: 65px;
     }
 }

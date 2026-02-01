@@ -13,8 +13,8 @@ const Footer = () => {
                         <div className='footer-brand-content'>
                             <p className="cta-text">Do you like what you see?</p>
                             <p className="sub-cta">Let's build the future IAS.</p>
-                            <Link to="https://cal.com/nanda-kishore-jvcbgm/30min" target="_blank" className="footer-link-btn">
-                                Let's Talk with Us <ArrowUpRight size={18} />
+                            <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="footer-link-btn">
+                                Get in Touch with Dr. Vivekananda <ArrowUpRight size={18} />
                             </Link>
                         </div>
                     </div>

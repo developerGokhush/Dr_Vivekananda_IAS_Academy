@@ -19,7 +19,8 @@ const Gallery = ({ defaultFilter = 'All' }: GalleryProps) => {
         'Public Events',
         'Podcasts',
         'Seminars',
-        // 'Testimonials'
+        'Testimonials',
+        'Accolades',
     ];
 
     useEffect(() => {

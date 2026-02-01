@@ -47,7 +47,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Link to="https://cal.com/nanda-kishore-jvcbgm/30min" target="_blank" className="btn-touch" onClick={() => setIsOpen(false)}>
+        <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="btn-touch" onClick={() => setIsOpen(false)}>
           <div className="btn-touch-transition">
             <span className='top-btn-touch'>Get in Touch</span>
             <span className='bottom-btn-touch'>Get in Touch</span>
@@ -74,7 +74,7 @@ const Navbar = () => {
               {link.name}
             </NavLink>
           ))}
-          <Link to="https://cal.com/nanda-kishore-jvcbgm/30min" target="_blank" className="btn-touch mobile-btn" onClick={() => setIsOpen(false)}>
+          <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="btn-touch mobile-btn" onClick={() => setIsOpen(false)}>
             <span>Get in Touch</span>
             <ArrowRight size={18} />
           </Link>
