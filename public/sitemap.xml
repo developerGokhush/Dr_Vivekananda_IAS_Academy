@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Static Pages -->
    <url>
       <loc>https://drvivekanandaias.com/</loc>
       <lastmod>2026-02-02</lastmod>
@@ -9,9 +10,53 @@
    <url>
       <loc>https://drvivekanandaias.com/about</loc>
       <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/director</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/contact</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/gallery</loc>
+      <lastmod>2026-02-02</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://drvivekanandaias.com/privacy</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/pricing</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/testimonials</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/accolades</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+   </url>
+
+   <!-- Listing Pages -->
    <url>
       <loc>https://drvivekanandaias.com/courses</loc>
       <lastmod>2026-02-02</lastmod>
@@ -19,27 +64,103 @@
       <priority>0.9</priority>
    </url>
    <url>
-      <loc>https://drvivekanandaias.com/gallery</loc>
-      <lastmod>2026-02-02</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>0.7</priority>
-   </url>
-   <url>
       <loc>https://drvivekanandaias.com/blogs</loc>
       <lastmod>2026-02-02</lastmod>
       <changefreq>daily</changefreq>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/optional-classes</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
       <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://drvivekanandaias.com/director</loc>
+      <loc>https://drvivekanandaias.com/courses/optional-mentorship</loc>
       <lastmod>2026-02-02</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.6</priority>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
    </url>
    <url>
-      <loc>https://drvivekanandaias.com/contact</loc>
+      <loc>https://drvivekanandaias.com/courses/general-studies</loc>
       <lastmod>2026-02-02</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.5</priority>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
    </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/general-studies/essay</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/general-studies/ethics</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/general-studies/mentorship</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/general-studies/value-addition</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://drvivekanandaias.com/courses/tgpsc-appsc</loc>
+      <lastmod>2026-02-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+
+   <!-- Dynamic Pages: Blog Posts -->
+   <url><loc>https://drvivekanandaias.com/blogs/anthropology-introduction-human-study</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/sociology-social-structure-change</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/general-studies-foundation-upsc</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/kinship-family-marriage-anthropology</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/social-change-modernization</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/indian-society-gs1</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/public-administration-role</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/religion-ritual-belief-anthropology</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/sociology-thinkers-classical-modern</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/ethics-case-studies-upsc</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/constitution-governance-gs2</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/economic-organization-anthropology</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/social-movements-india</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/economy-development-gs3</loc><priority>0.7</priority></url>
+   <url><loc>https://drvivekanandaias.com/blogs/welfare-schemes-implementation</loc><priority>0.7</priority></url>
+
+   <!-- Dynamic Pages: Optional Classes -->
+   <url><loc>https://drvivekanandaias.com/courses/optional-classes/anthropology</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/optional-classes/sociology</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: Optional Mentorship -->
+   <url><loc>https://drvivekanandaias.com/courses/optional-mentorship/parinaam</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/optional-mentorship/parishrama</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/optional-mentorship/samarpan</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/optional-mentorship/samvedana</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: Essay -->
+   <url><loc>https://drvivekanandaias.com/courses/general-studies/essay/deeksha</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: Ethics -->
+   <url><loc>https://drvivekanandaias.com/courses/general-studies/ethics/niyama</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: GS Mentorship -->
+   <url><loc>https://drvivekanandaias.com/courses/general-studies/mentorship/prerana</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/general-studies/mentorship/gs-guru-shishya</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: Value Addition -->
+   <url><loc>https://drvivekanandaias.com/courses/general-studies/value-addition/arthashastra</loc><priority>0.8</priority></url>
+
+   <!-- Dynamic Pages: TGPSC/APPSC -->
+   <url><loc>https://drvivekanandaias.com/courses/tgpsc-appsc/t-jagruthi</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/tgpsc-appsc/ap-jagruthi-2024</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/tgpsc-appsc/t-samaaj</loc><priority>0.8</priority></url>
+   <url><loc>https://drvivekanandaias.com/courses/tgpsc-appsc/t-vigyan</loc><priority>0.8</priority></url>
 </urlset>
