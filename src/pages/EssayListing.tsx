@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { essayCourses } from '../data/essayCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
@@ -8,6 +9,10 @@ const EssayListing = () => {
     return (
         <Layout>
             <div className="optional-page">
+                <SEO
+                    title="UPSC Essay Writing Course | Dr Vivekananda’s IAS Academy"
+                    description="Expert Essay writing modules for UPSC. Learn structure, content flow, and analysis to score high in the Essay paper."
+                />
                 <section className="optional-hero">
                     <div className="container">
                         <h1 className="section-title-large">Essay Writing Module</h1>

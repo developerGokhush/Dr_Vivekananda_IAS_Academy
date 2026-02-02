@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { blogPosts } from '../data/blogPosts';
 import './BlogListing.css';
 
@@ -25,6 +26,10 @@ const BlogListing = () => {
     return (
         <Layout>
             <div className="blog-listing-page">
+                <SEO
+                    title="UPSC Blogs & Insights | Dr Vivekananda’s IAS Academy"
+                    description="Expert articles and insights on UPSC preparation, current affairs, ethics, and answer writing strategies."
+                />
                 <section className="blog-hero">
                     <div className="container">
                         <h1 className="section-title-large">Insights & Articles</h1>

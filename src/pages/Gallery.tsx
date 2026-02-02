@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import { galleryData } from '../data/galleryData';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, X } from 'lucide-react';
+import SEO from '../components/SEO';
 import './Gallery.css';
 
 interface GalleryProps {
@@ -36,6 +37,10 @@ const Gallery = ({ defaultFilter = 'All' }: GalleryProps) => {
     return (
         <Layout>
             <div className="gallery-page">
+                <SEO
+                    title="Gallery | Dr Vivekananda’s IAS Academy"
+                    description="View our gallery of toppers, seminars, public events, and academy moments. See the vibrant community at Dr Vivekananda’s IAS Academy."
+                />
                 <div className="container">
                     <div className="header-content">
                         <h1 className="gallery-title">Our Gallery</h1>

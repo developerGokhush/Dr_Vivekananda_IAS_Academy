@@ -3,12 +3,17 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './Home.css';
 
 const Home = () => {
     return (
         <Layout>
             <div className="home-page">
+                <SEO
+                    title="Dr Vivekananda’s IAS Academy | Best UPSC Coaching in Hyderabad"
+                    description="Join Dr Vivekananda’s IAS Academy in Hyderabad for top-tier UPSC coaching. Expert guidance in Ethics, Anthropology, Sociology, and personalized mentorship."
+                />
                 {/* Hero Section */}
                 <section className="hero-section">
                     <div className="hero-grid-bg"></div>

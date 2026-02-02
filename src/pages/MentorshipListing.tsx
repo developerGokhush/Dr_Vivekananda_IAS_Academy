@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { mentorshipCourses } from '../data/mentorshipCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
@@ -8,6 +9,10 @@ const MentorshipListing = () => {
     return (
         <Layout>
             <div className="optional-page">
+                <SEO
+                    title="UPSC Mentorship Programs | Dr Vivekananda’s IAS Academy"
+                    description="Personalized mentorship programs for UPSC Civil Services. structured guidance, test series and performance analysis."
+                />
                 <section className="optional-hero">
                     <div className="container">
                         <h1 className="section-title-large">Mentorship & Test Series</h1>

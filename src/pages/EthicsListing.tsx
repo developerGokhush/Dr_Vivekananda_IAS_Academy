@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { ethicsCourses } from '../data/ethicsCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
@@ -8,6 +9,10 @@ const EthicsListing = () => {
     return (
         <Layout>
             <div className="optional-page">
+                <SEO
+                    title="Ethics & Essay Modules | Dr Vivekananda’s IAS Academy"
+                    description="Master General Studies Paper IV (Ethics) and Essay writing with Dr. Vivekananda's expert modules and test series."
+                />
                 <section className="optional-hero">
                     <div className="container">
                         <h1 className="section-title-large">Essay Writing Module</h1>

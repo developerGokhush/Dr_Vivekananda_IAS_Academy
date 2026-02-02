@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { TgpscAppscCourses } from '../data/tgpscAppscCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
@@ -8,6 +9,10 @@ const TgpscAppscListing = () => {
   return (
     <Layout>
       <div className="optional-page">
+        <SEO
+          title="APPSC & TSPSC Coaching | Dr Vivekananda’s IAS Academy"
+          description="Top-rated coaching for APPSC and TSPSC exams in Hyderabad. Expert faculty for Group 1 and Group 2 services."
+        />
         <section className="optional-hero">
           <div className="container">
             <h1 className="section-title-large">APPSC / TSPSC</h1>

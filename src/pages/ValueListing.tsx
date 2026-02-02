@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { valueCourses } from '../data/valueCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
@@ -8,6 +9,10 @@ const ValueListing = () => {
     return (
         <Layout>
             <div className="optional-page">
+                <SEO
+                    title="Value Addition Courses | Dr Vivekananda’s IAS Academy"
+                    description="Boost your UPSC preparation with our Value Addition modules. Current affairs, map pointing, and specialized topics."
+                />
                 <section className="optional-hero">
                     <div className="container">
                         <h1 className="section-title-large">Value - Additional Classes</h1>

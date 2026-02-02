@@ -1,6 +1,6 @@
 
 import Layout from '../components/Layout';
-
+import SEO from '../components/SEO';
 import { Check, ArrowRight } from 'lucide-react';
 import './Pricing.css';
 
@@ -30,6 +30,10 @@ const Pricing = () => {
     return (
         <Layout>
             <div className="pricing-page">
+                <SEO
+                    title="UPSC Coaching Fees & Plans | Dr Vivekananda’s IAS Academy"
+                    description="Affordable UPSC coaching fees in Hyderabad. Choose from Foundation, Integrated, and Advanced courses starting at ₹50,000."
+                />
                 <section className="pricing-hero">
                     <div className="container">
                         <h1 className="pricing-title">Some Affordable Pricing <br />Plans for you!</h1>

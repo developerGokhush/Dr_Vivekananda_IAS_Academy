@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { optionalClassesCourses } from '../data/optionalClassesCourses';
 import './OptionalClassesListing.css';
 
@@ -8,6 +9,10 @@ const OptionalClassesListing = () => {
     return (
         <Layout>
             <div className="optional-page">
+                <SEO
+                    title="Optional Classes - Anthropology & Sociology | Dr Vivekananda’s IAS Academy"
+                    description="Specialized optional foundation courses for Anthropology and Sociology. Expert faculty and comprehensive study material."
+                />
                 <section className="optional-hero">
                     <div className="container">
                         <h1 className="section-title-large">Optional Courses</h1>

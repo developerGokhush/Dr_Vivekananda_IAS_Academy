@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { getBlogById, blogPosts } from '../data/blogPosts';
 import { ArrowLeft } from 'lucide-react';
 import './BlogDetails.css';
@@ -24,6 +25,12 @@ const BlogDetails = () => {
     return (
         <Layout>
             <div className="blog-details-page">
+                <SEO
+                    title={`${post.title} | Dr Vivekananda’s IAS Academy`}
+                    description={post.excerpt}
+                    image={post.image}
+                    type="article"
+                />
                 <div className="blog-header">
                     <div className='blog-return-header'>
                         <Link to="/blogs" className="back-to-blog">

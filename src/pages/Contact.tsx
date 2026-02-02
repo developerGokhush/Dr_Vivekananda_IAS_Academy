@@ -1,12 +1,16 @@
 
 import Layout from '../components/Layout';
-
+import SEO from '../components/SEO';
 import './Contact.css';
 
 const Contact = () => {
     return (
         <Layout>
             <div className="contact-page">
+                <SEO
+                    title="Contact Us | Dr Vivekananda’s IAS Academy"
+                    description="Get in touch with Dr Vivekananda’s IAS Academy. Hyderabad's premier institute for UPSC coaching. Call or visit us today."
+                />
                 <section className="contact-hero">
                     <div className="container">
                         <div className="contact-header">

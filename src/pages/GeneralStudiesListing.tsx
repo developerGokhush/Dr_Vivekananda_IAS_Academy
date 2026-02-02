@@ -1,6 +1,7 @@
 
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import './Courses.css';
 
 const Courses = () => {
@@ -34,6 +35,10 @@ const Courses = () => {
     return (
         <Layout>
             <div className="courses-page">
+                <SEO
+                    title="General Studies Courses | Dr Vivekananda’s IAS Academy"
+                    description="Comprehensive General Studies modules including Ethics, Essay, Mentorship, and Value Addition for UPSC Civil Services."
+                />
                 <section className="courses-hero">
                     <div className="courses-container container">
                         <h1 className="section-title-large">The latest courses in General Studies.</h1>

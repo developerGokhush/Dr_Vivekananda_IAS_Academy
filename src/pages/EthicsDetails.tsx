@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import { useParams, Navigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { ethicsCourses } from '../data/ethicsCourses';
 import { Check, Calendar, User, CreditCard, Star } from 'lucide-react';
 import './OptionalClassesDetails.css'; // Reusing styles
@@ -15,6 +16,11 @@ const EthicsDetails = () => {
     return (
         <Layout>
             <div className="optional-details-page">
+                <SEO
+                    title={`${course.title} | Ethics Module`}
+                    description={`Master Ethics with our ${course.title}. ${course.subtitle}. Taught by ${course.faculty}.`}
+                    image={course.image}
+                />
                 <section className="details-hero">
                     <div className="container">
                         <div className="details-hero-content">

@@ -1,11 +1,16 @@
 
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
     return (
         <Layout>
             <div className="privacy-page">
+                <SEO
+                    title="Privacy Policy | Dr Vivekananda’s IAS Academy"
+                    description="Our privacy policy outlines how we collect, use, and protect your personal information."
+                />
                 <section className="privacy-section">
                     <div className="container">
                         <h1 className="privacy-title">Privacy Policy</h1>

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import { useParams, Navigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { optionalClassesCourses } from '../data/optionalClassesCourses';
 import { Check, Clock, Calendar, User, CreditCard, Tag } from 'lucide-react';
 import './OptionalClassesDetails.css';
@@ -15,6 +16,11 @@ const OptionalClassesDetails = () => {
     return (
         <Layout>
             <div className="optional-details-page">
+                <SEO
+                    title={`${course.title} | Optional Course`}
+                    description={`Join our comprehensive ${course.title} optional course. ${course.subtitle}. Faculty: ${course.faculty}.`}
+                    image={course.image}
+                />
                 <section className="details-hero">
                     <div className="container">
                         <div className="details-hero-content">

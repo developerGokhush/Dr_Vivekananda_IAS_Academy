@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import { useParams, Navigate } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { essayCourses } from '../data/essayCourses';
 import { Check, Calendar, User, CreditCard, Star } from 'lucide-react';
 import './OptionalClassesDetails.css'; // Reusing styles
@@ -15,6 +16,11 @@ const EssayDetails = () => {
     return (
         <Layout>
             <div className="optional-details-page">
+                <SEO
+                    title={`${course.title} | Essay Module`}
+                    description={`Elevate your essay writing skills with ${course.title}. ${course.subtitle}. Guidance by ${course.faculty}.`}
+                    image={course.image}
+                />
                 <section className="details-hero">
                     <div className="container">
                         <div className="details-hero-content">

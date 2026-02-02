@@ -1,12 +1,17 @@
 
 import Layout from '../components/Layout';
 import { Quote } from 'lucide-react';
+import SEO from '../components/SEO';
 import './Director.css';
 
 const Director = () => {
     return (
         <Layout>
             <div className="director-page">
+                <SEO
+                    title="Our Director | Dr Vivekananda’s IAS Academy"
+                    description="Meet Dr. Vivekananda Gadiyaram, founder of Dr Vivekananda’s IAS Academy. A former civil servant and dedicated mentor shaping future leaders."
+                />
                 <section className="director-hero">
                     <div className="container">
                         <h1 className="director-title">Founder’s Profile</h1>

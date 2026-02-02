@@ -3,11 +3,16 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import './About.css';
 import { Play } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About = () => {
     return (
         <Layout>
             <div className="about-page">
+                <SEO
+                    title="About Us | Dr Vivekananda’s IAS Academy"
+                    description="Learn about our vision to nurture ethical and competent civil servants. Led by Dr. Vivekananda, we offer affordable and structured UPSC guidance."
+                />
                 <section className="about-hero">
                     <div className="container about-container">
                         <motion.h1
