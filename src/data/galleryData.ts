@@ -89,13 +89,27 @@ export const galleryData: GalleryItem[] = [
     //     tag: 'Testimonials',
     //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
     // },
-    // {
-    //     id: 't5',
-    //     image: '/assets/gallery/With Mounika.P IPS Addl SP, Adilabad.jpeg',
-    //     desc: '"A transformative journey. The faculty doesn\'t just teach, they mentor you for life as a civil servant." - Mounika P',
-    //     tag: 'Testimonials',
-    //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    // }
+    {
+        id: 'p1',
+        image: '/assets/gallery/Podcast with iDreamMedia.png',
+        desc: 'Podcast with iDreamMedia on my MBBS to UPSC journey',
+        tag: 'Podcasts',
+        videoUrl: 'https://www.youtube.com/embed/RUF3-J-S3fs?si=gWinZYa1CqAJ-4A3'
+    },
+    {
+        id: 'p2',
+        image: '/assets/gallery/Podcast with iDreamMedia2.png',
+        desc: 'Podcast with iDreamMedia on my Experience in Delhi UPSC Coaching',
+        tag: 'Podcasts',
+        videoUrl: 'https://www.youtube.com/embed/6qKVb0truys?si=4JrrlGfwvwQd17r5'
+    },
+    {
+        id: 'p3',
+        image: '/assets/gallery/Podcast on JoshTalk.png',
+        desc: 'Podcast on JoshTalk about the UPSC Coaching',
+        tag: 'Podcasts',
+        videoUrl: 'https://www.youtube.com/embed/lnsBfaqPbBI?si=YAE_ruu6OCdWMy0l'
+    },
     {
         id: 'wa-1',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.25 (1).jpeg',
