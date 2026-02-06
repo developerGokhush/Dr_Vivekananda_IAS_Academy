@@ -61,34 +61,20 @@ export const galleryData: GalleryItem[] = [
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
     },
-    // {
-    //     id: 't1',
-    //     image: '/assets/gallery/With Banna Venkatesh AIR-15 IAS (Under Trainee).jpeg',
-    //     desc: '"Dr. Vivekananda sir’s guidance was pivotal in my journey. His anthropology classes gave me the conceptual clarity I needed to score high." - Banna Venkatesh',
-    //     tag: 'Testimonials',
-    //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    // },
-    // {
-    //     id: 't2',
-    //     image: '/assets/gallery/With Bhargav Potupureddi IPS (Under Trainee).jpeg',
-    //     desc: '"The personalized mentorship and the disciplined approach at the academy helped me stay focused throughout the preparation." - Bhargav Potupureddi',
-    //     tag: 'Testimonials',
-    //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    // },
-    // {
-    //     id: 't3',
-    //     image: '/assets/gallery/With Chaitanya Reddy IPS Addl Superintendent of Police, Kamareddy.jpeg',
-    //     desc: '"The test series and the detailed feedback on my answers were instrumental in improving my writing skills." - Chaitanya Reddy',
-    //     tag: 'Testimonials',
-    //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    // },
-    // {
-    //     id: 't4',
-    //     image: '/assets/gallery/With Mantri Mourya Bharadwaj IAS Joint Collector & Addl District Magistrate Puttaparthi Sri Satya Sai District.jpeg',
-    //     desc: '"Consistency is key, and this academy provides the perfect environment to maintain it. Truly grateful for the support." - Mantri Mourya Bharadwaj',
-    //     tag: 'Testimonials',
-    //     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
-    // },
+    {
+        id: 't1',
+        image: '/assets/gallery/Dr krishna Air 155.png',
+        desc: 'Dr krishna Air 155 (2025) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/lHlvCOdxWGc?si=ZPv7Ew9rdAtWyjN1'
+    },
+    {
+        id: 't2',
+        image: '/assets/gallery/Benjo P. Jose Air 59.png',
+        desc: 'Benjo P. Jose Air 59 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/PHgrKsMPmiU?si=m2zroJrXhoVIQh-H'
+    },
     {
         id: 'p1',
         image: '/assets/gallery/Podcast with iDreamMedia.png',
