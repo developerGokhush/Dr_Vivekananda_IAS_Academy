@@ -76,6 +76,34 @@ export const galleryData: GalleryItem[] = [
         videoUrl: 'https://www.youtube.com/embed/PHgrKsMPmiU?si=m2zroJrXhoVIQh-H'
     },
     {
+        id: 't3',
+        image: '/assets/gallery/K Srinivasulu Air 526.png',
+        desc: 'K Srinivasulu Air 526 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/woMc4QbUwW4'
+    },
+    {
+        id: 't4',
+        image: '/assets/gallery/Sahana Air 739.png',
+        desc: 'Sahana Air 739 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/kEjxUL7iTY4'
+    },
+    {
+        id: 't5',
+        image: '/assets/gallery/Dr Vineeth Air 169.png',
+        desc: 'Dr Vineeth Air 169 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/7dv-01BLNj0'
+    },
+    {
+        id: 't6',
+        image: '/assets/gallery/K Pranay Kumar Air 554.png',
+        desc: 'K Pranay Kumar Air 554 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/Gg_E7MVb-aA'
+    },
+    {
         id: 'p1',
         image: '/assets/gallery/Podcast with iDreamMedia.png',
         desc: 'Podcast with iDreamMedia on my MBBS to UPSC journey',
@@ -140,51 +168,63 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'wa-8',
+        image: '/assets/gallery/WhatsApp Image 2026-02-07 at 10.41.52.jpeg',
+        desc: 'Meet with Bhatti Vikramarka Garu',
+        tag: 'Public Events'
+    },
+    {
+        id: 'wa-9',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (3).jpeg',
         desc: 'Award at Seminar',
         tag: 'Accolades'
     },
     {
-        id: 'wa-9',
+        id: 'wa-10',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27.jpeg',
         desc: 'Interactive Session',
         tag: 'Public Events'
     },
     {
-        id: 'wa-10',
+        id: 'wa-11',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.28 (1).jpeg',
         desc: 'Student Success Celebration',
         tag: 'Public Events'
     },
     {
-        id: 'wa-11',
+        id: 'wa-12',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.28 (2).jpeg',
         desc: 'Faculty Meeting',
         tag: 'Seminars'
     },
     {
-        id: 'wa-12',
+        id: 'wa-13',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.28.jpeg',
         desc: 'Motivational Talk',
         tag: 'Seminars'
     },
     {
-        id: 'wa-13',
+        id: 'wa-14',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.29 (1).jpeg',
         desc: 'Annual Day Gathering',
         tag: 'Public Events'
     },
     {
-        id: 'wa-14',
+        id: 'wa-15',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.29 (2).jpeg',
-        desc: 'Group Discussion',
+        desc: 'Adressing the event at Ted Talks',
         tag: 'Seminars'
     },
     {
-        id: 'wa-15',
+        id: 'wa-16',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.29 (3).jpeg',
-        desc: 'Campus Tour',
+        desc: 'Idea Sharing with future aspirants',
         tag: 'Public Events'
+    },
+    {
+        id: 'wa-17',
+        image: '/assets/gallery/Award at Surya Vidyanikethan.jpg',
+        desc: 'Award at Surya Vidyanikethan',
+        tag: 'Accolades'
     },
     {
         id: 'wa-18',
@@ -199,31 +239,49 @@ export const galleryData: GalleryItem[] = [
         tag: 'Public Events'
     },
     {
+        id: 'wa-20',
+        image: '/assets/gallery/Speech at Surya Vidyanikethan.jpg',
+        desc: 'Speech at Surya Vidyanikethan',
+        tag: 'Public Events'
+    },
+    {
+        id: 'wa-21',
+        image: '/assets/gallery/Award at Opening event.png',
+        desc: 'Award at Opening event',
+        tag: 'Accolades'
+    },
+    {
         id: 'wa-22',
+        image: '/assets/gallery/WhatsApp Image 2026-02-08 at 21.04.46.jpeg',
+        desc: 'Book Launch of Retired IAS Officer Rangarajan sir',
+        tag: 'Public Events'
+    },
+    {
+        id: 'wa-23',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.31 (1).jpeg',
         desc: 'Ted Talks',
         tag: 'Public Events'
     },
     {
-        id: 'wa-23',
+        id: 'wa-24',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.31 (2).jpeg',
         desc: 'Academy Function',
         tag: 'Public Events'
     },
     {
-        id: 'wa-24',
-        image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.31.jpeg',
-        desc: 'Team Building',
-        tag: 'Seminars'
+        id: 'wa-25',
+        image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.29 (4).jpeg',
+        desc: 'Book Launch at CMR Engineering College',
+        tag: 'Public Events'
     },
     {
-        id: 'wa-25',
+        id: 'wa-26',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.32.jpeg',
         desc: 'Award at Ted Talks',
         tag: 'Accolades'
     },
     {
-        id: 'wa-26',
+        id: 'wa-27',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.59.jpeg',
         desc: 'Launch with Chief Guest',
         tag: 'Public Events'
