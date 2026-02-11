@@ -94,7 +94,7 @@ const Home = () => {
                             }}
                         >
                             <div className="hero-image-mask">
-                                <img src="/assets/images/director.png" alt="IAS Academy Architecture" className="hero-image-main" />
+                                <img src="/assets/images/director1.jpeg" alt="IAS Academy Architecture" className="hero-image-main" />
                             </div>
                             <div className="hero-director-info glass-card-small">
                                 <h3 className='hero-director-name'>Dr. Vivekananda Gadiyaram</h3>

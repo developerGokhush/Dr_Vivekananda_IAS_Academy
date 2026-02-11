@@ -174,12 +174,6 @@ export const galleryData: GalleryItem[] = [
         tag: 'Public Events'
     },
     {
-        id: 'pe-4',
-        image: '/assets/gallery/WhatsApp Image 2026-02-07 at 10.41.52.jpeg',
-        desc: 'Meet with Bhatti Vikramarka Garu',
-        tag: 'Public Events'
-    },
-    {
         id: 'a-2',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (3).jpeg',
         desc: 'Award at Seminar',
@@ -285,6 +279,12 @@ export const galleryData: GalleryItem[] = [
         id: 'a-5',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.32.jpeg',
         desc: 'Award at Ted Talks',
+        tag: 'Accolades'
+    },
+    {
+        id: 'a-6',
+        image: '/assets/gallery/WhatsApp Image 2026-02-07 at 10.41.52.jpeg',
+        desc: 'Felicitation by Bhatti Vikramarka Garu',
         tag: 'Accolades'
     },
     {
