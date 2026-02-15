@@ -47,7 +47,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="btn-touch" onClick={() => setIsOpen(false)}>
+        <Link to="https://forms.gle/Z6JvPttByGFygChm9" target="_blank" className="btn-touch" onClick={() => setIsOpen(false)}>
           <div className="btn-touch-transition">
             <span className='top-btn-touch'>Get in Touch</span>
             <span className='bottom-btn-touch'>Get in Touch</span>

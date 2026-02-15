@@ -49,8 +49,9 @@ const Home = () => {
                                         </g>
 
                                         <image
-                                            href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/256px-Emblem_of_India.svg.png"
-                                            x="25" y="25" width="50" height="50"
+                                            // href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/256px-Emblem_of_India.svg.png"
+                                            href="/Emblem_of_India.png"
+                                            x="25" y="20" width="50" height="60"
                                         />
                                     </svg>
                                 </div>
@@ -80,7 +81,7 @@ const Home = () => {
                                 className="hero-actions"
                             >
                                 <Link to="https://cal.com/vivekananda-bniym3/30min" target="_blank" className="btn-hero-pill">
-                                    Talk to Us <ArrowRight size={20} />
+                                    Talk to Dr Vivekananda <ArrowRight size={20} />
                                 </Link>
                             </motion.div>
                         </div>
@@ -94,7 +95,7 @@ const Home = () => {
                             }}
                         >
                             <div className="hero-image-mask">
-                                <img src="/assets/images/director1.jpeg" alt="IAS Academy Architecture" className="hero-image-main" />
+                                <img src="/assets/images/director3.jpeg" alt="Dr Vivekananda's IAS Academy Director" className="hero-image-main" />
                             </div>
                             <div className="hero-director-info glass-card-small">
                                 <h3 className='hero-director-name'>Dr. Vivekananda Gadiyaram</h3>
@@ -141,31 +142,6 @@ const Home = () => {
                     </div>
                 </motion.div>
 
-                {/* Live Classes Section */}
-                <section className="live-classes">
-                    <div className="container dark-card">
-                        <div className="live-header">
-                            <h2>Our Gallery</h2>
-                        </div>
-                        <div className="live-list">
-                            {[
-                                { id: '01', imgSrc: "/assets/images/lbsnaa-gate.png", link: "/gallery", state: { filter: 'Toppers' }, title: 'Our Toppers', desc: 'Celebrating the triumph of determination—meet our students who conquered the Civil Services with flying colors.' },
-                                { id: '02', imgSrc: "/assets/images/ips-training.png", link: "/gallery", state: { filter: 'Public Events' }, title: 'Public Events', desc: 'Witness our engagement with the Civil Services community and experts, fostering a spirit of service and awareness.' },
-                                { id: '03', imgSrc: "/assets/images/podcast-studio.png", link: "/gallery", state: { filter: 'Podcasts' }, title: 'Podcasts', desc: 'Insightful discussions on preparation strategy, current affairs, and the journey of civil service aspirants.' },
-                                { id: '04', imgSrc: "/assets/images/seminar-hall.png", link: "/gallery", state: { filter: 'Seminars' }, title: 'Seminars', desc: 'Intensive sessions and workshops designed to deepen understanding and enhance analytical skills.' }
-                            ].map(item => (
-                                <NavLink key={item.id} to={item.link} state={item.state} className="live-item">
-                                    <img src={item.imgSrc} alt={item.title} className='gallery-image' />
-                                    <div className='flex'>
-                                        <h4 className="item-content-title">{item.title}</h4>
-                                        <p className="item-content-desc">{item.desc}</p>
-                                    </div>
-                                </NavLink>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
                 {/* More about us / more-about-us List */}
                 <section className="more-about-us-section">
                     <div className="more-about-us-container container">
@@ -186,6 +162,31 @@ const Home = () => {
                                     <div className="more-about-us-content">
                                         <h4 className='more-about-us-title'>{item.title}</h4>
                                         <p className="more-about-us-label">{item.desc}</p>
+                                    </div>
+                                </NavLink>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Live Classes Section */}
+                <section className="live-classes">
+                    <div className="container dark-card">
+                        <div className="live-header">
+                            <h2>Our Gallery</h2>
+                        </div>
+                        <div className="live-list">
+                            {[
+                                { id: '01', imgSrc: "/assets/images/lbsnaa-gate.png", link: "/gallery", state: { filter: 'Toppers' }, title: 'Our Toppers', desc: 'Celebrating the triumph of determination—meet our students who conquered the Civil Services with flying colors.' },
+                                { id: '02', imgSrc: "/assets/images/ips-training.png", link: "/gallery", state: { filter: 'Public Events' }, title: 'Public Events', desc: 'Witness our engagement with the Civil Services community and experts, fostering a spirit of service and awareness.' },
+                                { id: '03', imgSrc: "/assets/images/podcast-studio.png", link: "/gallery", state: { filter: 'Podcasts' }, title: 'Podcasts', desc: 'Insightful discussions on preparation strategy, current affairs, and the journey of civil service aspirants.' },
+                                { id: '04', imgSrc: "/assets/images/seminar-hall.png", link: "/gallery", state: { filter: 'Seminars' }, title: 'Seminars', desc: 'Intensive sessions and workshops designed to deepen understanding and enhance analytical skills.' }
+                            ].map(item => (
+                                <NavLink key={item.id} to={item.link} state={item.state} className="live-item">
+                                    <img src={item.imgSrc} alt={item.title} className='gallery-image' />
+                                    <div className='flex'>
+                                        <h4 className="item-content-title">{item.title}</h4>
+                                        <p className="item-content-desc">{item.desc}</p>
                                     </div>
                                 </NavLink>
                             ))}

@@ -50,10 +50,10 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
-        id: 't-8',
+        id: 'pe-0',
         image: '/assets/gallery/toppers/With Shri Avula Ramesh Reddy Inspector General Police.png',
-        desc: 'With Shri Avula Ramesh Reddy Inspector General Police',
-        tag: 'Toppers'
+        desc: 'Warm meet with Shri Avula Ramesh Reddy Inspector General Police',
+        tag: 'Public Events'
     },
     {
         id: 't-9',
@@ -241,8 +241,8 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'pe-11',
-        image: '/assets/gallery/Speech at Surya Vidyanikethan.jpg',
-        desc: 'Speech at Surya Vidyanikethan',
+        image: '/assets/gallery/Addressing parents at Surya Vidyanikethan.jpg',
+        desc: 'Addressing parents at Surya Vidyanikethan',
         tag: 'Public Events'
     },
     {
@@ -290,7 +290,7 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'pe-16',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.59.jpeg',
-        desc: 'Launch with Chief Guest',
+        desc: 'Launch with Chief Guest Jaya Prakash Narayana Sir',
         tag: 'Public Events'
     }
 ];
