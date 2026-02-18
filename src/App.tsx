@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReactGA from 'react-ga4';
+import Analytics from './components/Analytics';
 import Home from './pages/Home';
 import About from './pages/About';
 import Testimonials from './pages/Testimonials';
@@ -30,9 +32,14 @@ import BlogListing from './pages/BlogListing';
 import BlogDetails from './pages/BlogDetails';
 import Accolades from './pages/Accolades';
 
+// Initialize Google Analytics with a placeholder ID
+// REPLACE 'G-XXXXXXXXXX' with your actual Measurement ID
+ReactGA.initialize("G-PGFM32ENZ3");
+
 function App() {
     return (
         <Router>
+            <Analytics />
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
