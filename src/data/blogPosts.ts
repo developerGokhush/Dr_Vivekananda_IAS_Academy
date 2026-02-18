@@ -1,23 +1,24 @@
 export interface BlogPost {
-    id: string;
-    title: string;
-    excerpt: string;
-    content: string;
-    author: string;
-    authorInitial: string;
-    date: string;
-    readTime: string;
-    category: string;
-    image: string;
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  authorInitial: string;
+  date: string;
+  readTime: string;
+  category: string;
+  image: string;
+  alt?: string;
 }
 
 export const blogPosts: BlogPost[] = [
-    {
-        id: "anthropology-introduction-human-study",
-        title: "Anthropology: Understanding Humans, Culture, and Society",
-        excerpt:
-            "Anthropology is the holistic study of human beings. This blog explains its scope, significance, and relevance for civil services.",
-        content: `
+  {
+    id: "anthropology-introduction-human-study",
+    title: "Anthropology: Understanding Humans, Culture, and Society",
+    excerpt:
+      "Anthropology is the holistic study of human beings. This blog explains its scope, significance, and relevance for civil services.",
+    content: `
       <h1>Anthropology: The Study of Humanity</h1>
 
       <p>Anthropology is the scientific study of human beings in their biological, social, and cultural dimensions. Unlike disciplines that focus on a single aspect of society, anthropology attempts to understand humanity as a whole. It asks fundamental questions about who we are, where we came from, how societies function, and how cultures shape human behavior.</p>
@@ -55,20 +56,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Anthropology is not merely an academic subject. It is a practical tool for governance, social harmony, and inclusive development. Understanding anthropology means understanding people—and governance ultimately is about people.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Jan 2024",
-        readTime: "15 min read",
-        category: "ANTHROPOLOGY",
-        image: "/assets/images/blog/blog_anthropology_intro.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Jan 2024",
+    readTime: "15 min read",
+    category: "ANTHROPOLOGY",
+    image: "/assets/images/blog/blog_anthropology_intro.png"
+  },
 
-    {
-        id: "sociology-social-structure-change",
-        title: "Sociology: Social Structure, Institutions, and Change",
-        excerpt:
-            "Sociology explains how societies function, maintain order, and respond to change—making it vital for governance.",
-        content: `
+  {
+    id: "sociology-social-structure-change",
+    title: "Sociology: Social Structure, Institutions, and Change",
+    excerpt:
+      "Sociology explains how societies function, maintain order, and respond to change—making it vital for governance.",
+    content: `
       <h1>Sociology: Understanding Society</h1>
 
       <p>Sociology is the systematic study of society, social relationships, and institutions. It examines how individuals interact with one another and how these interactions create patterns that shape collective life.</p>
@@ -108,20 +109,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Sociology offers administrators the intellectual tools to understand society beyond surface-level observations. It strengthens governance by aligning policy with social reality.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Jan 2024",
-        readTime: "14 min read",
-        category: "SOCIOLOGY",
-        image: "/assets/images/blog/blog_sociology_structure.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Jan 2024",
+    readTime: "14 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_sociology_structure.png"
+  },
 
-    {
-        id: "general-studies-foundation-upsc",
-        title: "General Studies for UPSC: Building the Foundation of a Civil Servant",
-        excerpt:
-            "General Studies forms the intellectual backbone of the UPSC examination and administrative thinking.",
-        content: `
+  {
+    id: "general-studies-foundation-upsc",
+    title: "General Studies for UPSC: Building the Foundation of a Civil Servant",
+    excerpt:
+      "General Studies forms the intellectual backbone of the UPSC examination and administrative thinking.",
+    content: `
       <h1>General Studies: The Core of UPSC Preparation</h1>
 
       <p>General Studies (GS) is the backbone of the UPSC Civil Services Examination. It evaluates an aspirant’s understanding of society, governance, economy, ethics, and international relations.</p>
@@ -153,20 +154,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>General Studies is not just an exam requirement. It builds the intellectual foundation required for responsible and informed governance.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Jan 2024",
-        readTime: "16 min read",
-        category: "GENERAL STUDIES",
-        image: "/assets/images/blog/blog_gs_foundation.png"
-    }
-    ,
-    {
-        id: "kinship-family-marriage-anthropology",
-        title: "Kinship, Family, and Marriage: An Anthropological Understanding",
-        excerpt:
-            "Kinship systems form the foundation of social organization. Anthropology explains how family and marriage shape societies.",
-        content: `
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Jan 2024",
+    readTime: "16 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_gs_foundation.png"
+  }
+  ,
+  {
+    id: "kinship-family-marriage-anthropology",
+    title: "Kinship, Family, and Marriage: An Anthropological Understanding",
+    excerpt:
+      "Kinship systems form the foundation of social organization. Anthropology explains how family and marriage shape societies.",
+    content: `
       <h1>Kinship, Family, and Marriage</h1>
 
       <p>Kinship is one of the most fundamental concepts in anthropology. It refers to the socially recognized relationships based on blood, marriage, and adoption. Every society organizes social life around kinship systems, which determine inheritance, residence, authority, and emotional bonds.</p>
@@ -211,20 +212,21 @@ export const blogPosts: BlogPost[] = [
 
       <p>Anthropological understanding of kinship helps administrators engage with communities respectfully and effectively.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "16 min read",
-        category: "ANTHROPOLOGY",
-        image: "/assets/images/blog/blog_anthropology_kinship.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "16 min read",
+    category: "ANTHROPOLOGY",
+    image: "/assets/images/blog/blog_anthropology_kinship.png",
+    alt: "Anthropological Diagram of Kinship and Family Systems"
+  },
 
-    {
-        id: "social-change-modernization",
-        title: "Social Change and Modernization: A Sociological Perspective",
-        excerpt:
-            "Sociology explains how societies transform under the forces of modernization, urbanization, and globalization.",
-        content: `
+  {
+    id: "social-change-modernization",
+    title: "Social Change and Modernization: A Sociological Perspective",
+    excerpt:
+      "Sociology explains how societies transform under the forces of modernization, urbanization, and globalization.",
+    content: `
       <h1>Social Change and Modernization</h1>
 
       <p>Social change refers to significant alterations over time in social structure, cultural patterns, and social behavior. Sociology studies how societies evolve in response to economic, technological, and political forces.</p>
@@ -261,20 +263,21 @@ export const blogPosts: BlogPost[] = [
 
       <p>Sociology provides insights into managing social transformation without destabilizing society.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "15 min read",
-        category: "SOCIOLOGY",
-        image: "/assets/images/blog/blog_sociology_modernization.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "15 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_sociology_modernization.png",
+    alt: "Modernization and Social Change in Indian Society"
+  },
 
-    {
-        id: "indian-society-gs1",
-        title: "Indian Society for GS Paper I: Structure, Diversity, and Change",
-        excerpt:
-            "Indian society is complex and diverse. This blog explains its structure and relevance for GS Paper I.",
-        content: `
+  {
+    id: "indian-society-gs1",
+    title: "Indian Society for GS Paper I: Structure, Diversity, and Change",
+    excerpt:
+      "Indian society is complex and diverse. This blog explains its structure and relevance for GS Paper I.",
+    content: `
       <h1>Understanding Indian Society</h1>
 
       <p>Indian society is characterized by unity in diversity. It consists of multiple religions, languages, castes, tribes, and cultural traditions coexisting within a single political framework.</p>
@@ -304,20 +307,21 @@ export const blogPosts: BlogPost[] = [
 
       <p>A nuanced understanding of Indian society strengthens governance and social harmony.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "17 min read",
-        category: "GENERAL STUDIES",
-        image: "/assets/images/blog/blog_gs_indian_society.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "17 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_gs_indian_society.png",
+    alt: "Diversity of Indian Society for GS Paper 1"
+  },
 
-    {
-        id: "public-administration-role",
-        title: "Public Administration: Role, Challenges, and Ethical Responsibility",
-        excerpt:
-            "Public administration connects policy with people. Understanding its role is essential for effective governance.",
-        content: `
+  {
+    id: "public-administration-role",
+    title: "Public Administration: Role, Challenges, and Ethical Responsibility",
+    excerpt:
+      "Public administration connects policy with people. Understanding its role is essential for effective governance.",
+    content: `
       <h1>Public Administration in Governance</h1>
 
       <p>Public administration refers to the implementation of government policies and delivery of public services. It forms the operational backbone of the state.</p>
@@ -346,19 +350,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Public administration determines the success or failure of governance.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "15 min read",
-        category: "GOVERNANCE",
-        image: "/assets/images/blog/blog_public_admin.png"
-    },
-    {
-        id: "religion-ritual-belief-anthropology",
-        title: "Religion, Ritual, and Belief Systems: An Anthropological Perspective",
-        excerpt:
-            "Anthropology studies religion as a social and cultural system that gives meaning, order, and cohesion to human life.",
-        content: `
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "15 min read",
+    category: "GOVERNANCE",
+    image: "/assets/images/blog/blog_public_admin.png",
+    alt: "Public Administration and Governance Structure"
+  },
+  {
+    id: "religion-ritual-belief-anthropology",
+    title: "Religion, Ritual, and Belief Systems: An Anthropological Perspective",
+    excerpt:
+      "Anthropology studies religion as a social and cultural system that gives meaning, order, and cohesion to human life.",
+    content: `
       <h1>Religion, Ritual, and Belief Systems</h1>
 
       <p>Religion is one of the most enduring and universal aspects of human society. Every known society has developed systems of belief, ritual practices, and moral codes that help individuals understand their world and their place within it. Anthropology approaches religion not as a question of truth or falsehood, but as a cultural system that fulfills important social and psychological functions.</p>
@@ -395,20 +400,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Anthropology teaches us that religion is not merely belief—it is a social institution that structures meaning, morality, and collective life.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "18 min read",
-        category: "ANTHROPOLOGY",
-        image: "/assets/images/blog/blog_anthropology_religion.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "18 min read",
+    category: "ANTHROPOLOGY",
+    image: "/assets/images/blog/blog_anthropology_religion.png"
+  },
 
-    {
-        id: "sociology-thinkers-classical-modern",
-        title: "Sociological Thinkers: Classical and Modern Perspectives",
-        excerpt:
-            "Sociological thinkers provide the theoretical foundation for understanding society, power, and change.",
-        content: `
+  {
+    id: "sociology-thinkers-classical-modern",
+    title: "Sociological Thinkers: Classical and Modern Perspectives",
+    excerpt:
+      "Sociological thinkers provide the theoretical foundation for understanding society, power, and change.",
+    content: `
       <h1>Sociological Thinkers and Their Ideas</h1>
 
       <p>Sociology as a discipline developed through the works of thinkers who sought to understand the rapid social changes brought by industrialization, urbanization, and political revolutions. Their ideas continue to shape how we interpret society today.</p>
@@ -439,20 +444,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Sociological thinkers provide enduring tools for understanding power, inequality, and social change.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "17 min read",
-        category: "SOCIOLOGY",
-        image: "/assets/images/blog/blog_sociology_thinkers.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "17 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_sociology_thinkers.png"
+  },
 
-    {
-        id: "ethics-case-studies-upsc",
-        title: "Ethics Case Studies in UPSC: How to Think, Not Memorize",
-        excerpt:
-            "Ethics case studies test moral reasoning, empathy, and administrative judgment.",
-        content: `
+  {
+    id: "ethics-case-studies-upsc",
+    title: "Ethics Case Studies in UPSC: How to Think, Not Memorize",
+    excerpt:
+      "Ethics case studies test moral reasoning, empathy, and administrative judgment.",
+    content: `
       <h1>Ethics Case Studies</h1>
 
       <p>Ethics case studies in UPSC are designed to evaluate how aspirants respond to real-life dilemmas faced by civil servants. These questions do not have fixed answers; instead, they assess values, reasoning, and decision-making ability.</p>
@@ -477,20 +482,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Ethics case studies reward clarity of thought and moral courage rather than rote learning.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "16 min read",
-        category: "ETHICS",
-        image: "/assets/images/blog/blog_ethics_case_studies.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "16 min read",
+    category: "ETHICS",
+    image: "/assets/images/blog/blog_ethics_case_studies.png"
+  },
 
-    {
-        id: "constitution-governance-gs2",
-        title: "Constitution and Governance: Understanding GS Paper II",
-        excerpt:
-            "GS Paper II evaluates knowledge of polity, governance, and constitutional values.",
-        content: `
+  {
+    id: "constitution-governance-gs2",
+    title: "Constitution and Governance: Understanding GS Paper II",
+    excerpt:
+      "GS Paper II evaluates knowledge of polity, governance, and constitutional values.",
+    content: `
       <h1>Constitution and Governance</h1>
 
       <p>The Indian Constitution provides the framework for governance, defining powers, responsibilities, and limitations of the state. GS Paper II tests an aspirant’s understanding of this framework in practical governance contexts.</p>
@@ -515,19 +520,19 @@ export const blogPosts: BlogPost[] = [
 
       <p>Understanding governance is essential for effective administration and democratic stability.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Feb 2024",
-        readTime: "17 min read",
-        category: "GENERAL STUDIES",
-        image: "/assets/images/blog/blog_gs_constitution_gov.png"
-    },
-    {
-        id: "economic-organization-anthropology",
-        title: "Economic Organization and Subsistence: An Anthropological Perspective",
-        excerpt:
-            "Anthropology explains how different societies organize production, distribution, and consumption based on environment and culture.",
-        content: `
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Feb 2024",
+    readTime: "17 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_gs_constitution_gov.png"
+  },
+  {
+    id: "economic-organization-anthropology",
+    title: "Economic Organization and Subsistence: An Anthropological Perspective",
+    excerpt:
+      "Anthropology explains how different societies organize production, distribution, and consumption based on environment and culture.",
+    content: `
       <h1>Economic Organization and Subsistence</h1>
 
       <p>Economic organization refers to the way societies arrange the production, distribution, and consumption of resources necessary for survival. Anthropology studies economic systems not merely as market transactions but as culturally embedded activities shaped by environment, technology, and social relationships.</p>
@@ -566,20 +571,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Anthropology teaches that economic systems are social systems. Effective governance respects cultural patterns of production and exchange.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Mar 2024",
-        readTime: "18 min read",
-        category: "ANTHROPOLOGY",
-        image: "/assets/images/blog/blog_anthropology_economic.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "18 min read",
+    category: "ANTHROPOLOGY",
+    image: "/assets/images/blog/blog_anthropology_economic.png"
+  },
 
-    {
-        id: "social-movements-india",
-        title: "Social Movements in India: A Sociological Understanding",
-        excerpt:
-            "Social movements reflect collective efforts to challenge inequality, injustice, and exclusion in Indian society.",
-        content: `
+  {
+    id: "social-movements-india",
+    title: "Social Movements in India: A Sociological Understanding",
+    excerpt:
+      "Social movements reflect collective efforts to challenge inequality, injustice, and exclusion in Indian society.",
+    content: `
       <h1>Social Movements in India</h1>
 
       <p>Social movements are organized collective efforts aimed at bringing about or resisting social change. Sociology studies movements to understand how marginalized groups mobilize, articulate grievances, and influence policy.</p>
@@ -616,20 +621,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Social movements are vital expressions of democratic participation and social negotiation.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Mar 2024",
-        readTime: "17 min read",
-        category: "SOCIOLOGY",
-        image: "/assets/images/blog/blog_sociology_movements.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "17 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_sociology_movements.png"
+  },
 
-    {
-        id: "economy-development-gs3",
-        title: "Indian Economy and Development: Understanding GS Paper III",
-        excerpt:
-            "GS Paper III tests economic understanding, policy awareness, and developmental challenges.",
-        content: `
+  {
+    id: "economy-development-gs3",
+    title: "Indian Economy and Development: Understanding GS Paper III",
+    excerpt:
+      "GS Paper III tests economic understanding, policy awareness, and developmental challenges.",
+    content: `
       <h1>Indian Economy and Development</h1>
 
       <p>The Indian economy is a complex mix of traditional sectors and modern industries. GS Paper III evaluates an aspirant’s understanding of economic growth, development, and policy challenges.</p>
@@ -662,20 +667,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Understanding economic development is essential for informed governance and policy-making.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Mar 2024",
-        readTime: "18 min read",
-        category: "GENERAL STUDIES",
-        image: "/assets/images/blog/blog_gs_economy.png"
-    },
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "18 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_gs_economy.png"
+  },
 
-    {
-        id: "welfare-schemes-implementation",
-        title: "Welfare Schemes and Implementation Challenges in India",
-        excerpt:
-            "Welfare schemes are essential for social justice, but effective implementation determines their success.",
-        content: `
+  {
+    id: "welfare-schemes-implementation",
+    title: "Welfare Schemes and Implementation Challenges in India",
+    excerpt:
+      "Welfare schemes are essential for social justice, but effective implementation determines their success.",
+    content: `
       <h1>Welfare Schemes and Governance</h1>
 
       <p>Welfare schemes reflect the state’s commitment to social justice and inclusive development. India operates numerous schemes targeting poverty, health, education, and employment.</p>
@@ -700,20 +705,20 @@ export const blogPosts: BlogPost[] = [
 
       <p>Effective welfare delivery depends on administrative capacity, accountability, and empathy.</p>
     `,
-        author: "Dr. Vivekananda IAS Faculty",
-        authorInitial: "V",
-        date: "Mar 2024",
-        readTime: "17 min read",
-        category: "GOVERNANCE",
-        image: "/assets/images/blog/blog_welfare_schemes.png"
-    }
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "17 min read",
+    category: "GOVERNANCE",
+    image: "/assets/images/blog/blog_welfare_schemes.png"
+  }
 ];
 
 
 export const getBlogById = (id: string): BlogPost | undefined => {
-    return blogPosts.find(post => post.id === id);
+  return blogPosts.find(post => post.id === id);
 };
 
 export const getBlogsByCategory = (category: string): BlogPost[] => {
-    return blogPosts.filter(post => post.category === category);
+  return blogPosts.filter(post => post.category === category);
 };

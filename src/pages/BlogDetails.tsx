@@ -52,7 +52,7 @@ const BlogDetails = () => {
                 </div>
 
                 <div className="blog-featured-image">
-                    <img src={post.image} alt={post.title} />
+                    <img src={post.image} alt={post.alt || post.title} />
                 </div>
 
                 <div className="blog-content-wrapper">
@@ -97,7 +97,7 @@ const BlogDetails = () => {
                                     {relatedPosts.map((relatedPost) => (
                                         <Link to={`/blogs/${relatedPost.id}`} key={relatedPost.id} className="related-post-card">
                                             <div className="related-post-image">
-                                                <img src={relatedPost.image} alt={relatedPost.title} />
+                                                <img src={relatedPost.image} alt={relatedPost.alt || relatedPost.title} />
                                                 <span className="related-post-category">{relatedPost.category}</span>
                                             </div>
                                             <div className="related-post-content">

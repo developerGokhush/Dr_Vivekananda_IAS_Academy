@@ -24,7 +24,7 @@ const OptionalClassesDetails = () => {
                 <section className="details-hero">
                     <div className="container">
                         <div className="details-hero-content">
-                            <h1>{course.title}</h1>
+                            <h1>{course.seoTitle || course.title}</h1>
                             <p className="details-subtitle">{course.subtitle}</p>
                             <div className="details-badges">
                                 <span className="badge"><User size={16} /> {course.faculty}</span>
@@ -38,6 +38,11 @@ const OptionalClassesDetails = () => {
                 <section className="details-content">
                     <div className="container details-grid-layout">
                         <div className="details-main">
+                            {course.seoDescription && (
+                                <div className="course-seo-description glass-card" style={{ marginBottom: '2rem', padding: '1.5rem' }}>
+                                    <p>{course.seoDescription}</p>
+                                </div>
+                            )}
                             <div className="feature-block glass-card">
                                 <h2>Features of the Module</h2>
                                 <ul className="feature-list">

@@ -7,6 +7,7 @@ interface SEOProps {
   name?: string;
   image?: string;
   url?: string;
+  keywords?: string;
 }
 
 const SEO = ({
@@ -15,13 +16,15 @@ const SEO = ({
   type = 'website',
   name = 'Dr. Vivekananda’s IAS Academy',
   image = '/assets/images/logo.jpeg',
-  url = 'https://drvivekanandaias.com' // Replace with actual domain when known, or pass via prop
+  url = 'https://drvivekanandaias.com', // Replace with actual domain when known, or pass via prop
+  keywords = 'best ias academy in hyderabad, best upsc coaching in hyderabad, anthropology optional coaching, sociology optional coaching, best optional courses in hyderabad, ethics gs paper 4, civil services preparation, ias coaching hyderabad, dr vivekananda ias academy'
 }: SEOProps) => {
   return (
     <Helmet>
       {/* Standard metadata tags */}
       <title>{title}</title>
       <meta name='description' content={description} />
+      <meta name='keywords' content={keywords} />
 
       {/* Facebook tags */}
       <meta property="og:type" content={type} />

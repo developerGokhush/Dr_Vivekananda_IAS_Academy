@@ -22,7 +22,7 @@ const OptionalClassesListing = () => {
                             {optionalClassesCourses.map((course) => (
                                 <Link key={course.id} to={`/courses/optional-classes/${course.id}`} className="optional-card-large">
                                     <div className="optional-img-wrap">
-                                        <img src={course.image} alt={course.title} />
+                                        <img src={course.image} alt={course.alt || course.title} />
                                     </div>
                                     <div className="optional-content">
                                         <h3>{course.title}</h3>

@@ -11,6 +11,9 @@ export interface CourseData {
   tests?: string;
   timings?: string;
   image: string;
+  alt?: string;
+  seoTitle?: string;
+  seoDescription?: string;
 }
 
 export const mentorshipCourses: CourseData[] = [
@@ -35,7 +38,10 @@ export const mentorshipCourses: CourseData[] = [
       'A dedicated telegram group for sharing content.',
       'Scientific Scheduling mindful of students learning abilities.'
     ],
-    image: '/assets/images/prerana.png'
+    image: '/assets/images/prerana.png',
+    alt: 'Prerana Advanced GS Mains Test Series',
+    seoTitle: 'Prerana: Best UPSC Mains Test Series in Hyderabad',
+    seoDescription: 'Prerana is a premier GS Mains test series by Dr. Vivekananda’s IAS Academy. With 1:1 evaluation, detailed discussions, and personalized feedback, it is the best mentorship program for serious UPSC aspirants in Hyderabad.'
   },
   {
     id: 'gs-guru-shishya',
@@ -53,6 +59,9 @@ export const mentorshipCourses: CourseData[] = [
       'Strategies sessions at the beginning of Each subject Schedule.',
       'Rigorous preparation tracking with an Accountability Booklet.'
     ],
-    image: '/assets/images/guru-shishya.png'
+    image: '/assets/images/guru-shishya.png',
+    alt: 'GS Guru Shishya Parampara Mentorship Program',
+    seoTitle: 'GS Guru Shishya Parampara | Long Term UPSC Mentorship',
+    seoDescription: 'Join our unique Guru Shishya Parampara long-term mentorship program. Daily tests, weekend evaluations, and personalized guidance to ensure holistic preparation for UPSC General Studies.'
   }
 ];

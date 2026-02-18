@@ -10,6 +10,9 @@ export interface CourseData {
     usps: string[];
     features: string[];
     image: string;
+    alt?: string;
+    seoTitle?: string;
+    seoDescription?: string;
 }
 
 export const optionalClassesCourses: CourseData[] = [
@@ -38,7 +41,10 @@ export const optionalClassesCourses: CourseData[] = [
             'Personal Mentorship by Dr Vivekananda and weekly monitoring of preparation progress.',
             'Direct access to faculty for doubts clearance.'
         ],
-        image: '/assets/images/anthropology.png'
+        image: '/assets/images/anthropology.png',
+        alt: 'Anthropology Optional Foundation Course',
+        seoTitle: 'Best Anthropology Optional Coaching in Hyderabad | Dr. Vivekananda IAS',
+        seoDescription: 'Dr. Vivekananda’s IAS Academy provides the most comprehensive Anthropology coaching in Hyderabad. With expert faculty, personalized mentorship, and a proven track record of success, we help aspirants master the subject and secure top ranks in UPSC Civil Services.'
     },
     {
         id: 'sociology',
@@ -65,6 +71,9 @@ export const optionalClassesCourses: CourseData[] = [
             'Personal Mentorship by Dr Vivekananda and weekly monitoring of preparation progress.',
             'Direct access to faculty for doubts clearance.'
         ],
-        image: '/assets/images/sociology.png'
+        image: '/assets/images/sociology.png',
+        alt: 'Sociology Optional Foundation Course',
+        seoTitle: 'Best Sociology Optional Coaching in Hyderabad | Dr. Vivekananda IAS',
+        seoDescription: 'Join the best Sociology optional coaching in Hyderabad at Dr. Vivekananda’s IAS Academy. Our program offers complete syllabus coverage, answer writing practice, and expert guidance to help you maximize your score in the Civil Services Examination.'
     }
 ];

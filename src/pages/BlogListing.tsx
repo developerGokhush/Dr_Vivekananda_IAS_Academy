@@ -61,7 +61,7 @@ const BlogListing = () => {
                                     {displayedPosts.map((post) => (
                                         <Link to={`/blogs/${post.id}`} key={post.id} className="blog-card">
                                             <div className="blog-card-image">
-                                                <img src={post.image} alt={post.title} />
+                                                <img src={post.image} alt={post.alt || post.title} />
                                                 <span className="blog-category">{post.category}</span>
                                             </div>
                                             <div className="blog-card-content">

@@ -9,6 +9,9 @@ export interface EthicsCourseData {
     usps: string[];
     details: string[];
     image: string;
+    alt?: string;
+    seoTitle?: string;
+    seoDescription?: string;
 }
 
 export const ethicsCourses: EthicsCourseData[] = [
@@ -33,6 +36,9 @@ export const ethicsCourses: EthicsCourseData[] = [
             "Complete access to learning materials with full video recordings available on the app/portal, valid until completion of the upcoming UPSC Mains examination.",
             "Strong doubt-clearing and mentorship support through weekly live doubt sessions, doubt submission via forms or Telegram group, guaranteed responses within 24–48 hours, and ongoing one-to-one academic guidance."
         ],
-        image: '/assets/images/ethics-integrity.png'
+        image: '/assets/images/ethics-integrity.png',
+        alt: 'Ethics Integrity and Aptitude Course for UPSC Mains',
+        seoTitle: 'Best Ethics (GS Paper 4) Coaching in Hyderabad | Dr. Vivekananda IAS',
+        seoDescription: 'Master General Studies Paper 4 with the best Ethics coaching in Hyderabad. Our Niyama program offers comprehensive coverage, case study mastery, and answer writing practice to help you score 140+ in UPSC Ethics.'
     }
 ];

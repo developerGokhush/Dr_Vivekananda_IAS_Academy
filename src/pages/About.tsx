@@ -20,7 +20,8 @@ const About = () => {
                             animate={{ opacity: 1, y: 0 }}
                             className="about-title"
                         >
-                            Who We Are
+                            About Dr. Vivekananda IAS Academy <br />
+                            <span style={{ fontSize: '0.7em', fontWeight: 400 }}>Top UPSC Coaching in Hyderabad</span>
                         </motion.h1>
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
