@@ -711,6 +711,306 @@ export const blogPosts: BlogPost[] = [
     readTime: "17 min read",
     category: "GOVERNANCE",
     image: "/assets/images/blog/blog_welfare_schemes.png"
+  },
+    id: "tribes-india-anthropology",
+    title: "Tribes of India: Identity, Culture, and Administration",
+    excerpt:
+      "Anthropology provides deep insights into tribal identity, culture, and development challenges in India.",
+    content: `
+      <h1>Tribes of India</h1>
+
+      <p>India is home to one of the largest tribal populations in the world. Tribal communities possess distinct cultural identities, social institutions, and economic systems.</p>
+
+      <h2>Characteristics of Tribal Societies</h2>
+      <ul>
+        <li>Strong kinship ties</li>
+        <li>Community ownership of resources</li>
+        <li>Close relationship with nature</li>
+      </ul>
+
+      <h2>Tribal Issues</h2>
+      <p>Displacement, loss of livelihood, and cultural erosion pose serious challenges.</p>
+
+      <h2>Administrative Relevance</h2>
+      <p>Policy implementation in tribal areas requires cultural sensitivity and participatory governance.</p>
+
+      <h2>Conclusion</h2>
+      <p>Anthropology helps bridge the gap between tribal communities and the state.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "16 min read",
+    category: "ANTHROPOLOGY",
+    image: "/assets/images/blog/blog_tribes_india.png"
+  },
+
+  {
+    id: "caste-system-india-sociology",
+    title: "Caste System in India: Structure, Change, and Continuity",
+    excerpt:
+      "Sociology explains how caste operates as a system of stratification and power in Indian society.",
+    content: `
+      <h1>The Caste System</h1>
+
+      <p>The caste system is a form of social stratification characterized by hereditary status and endogamy.</p>
+
+      <h2>Features of Caste</h2>
+      <ul>
+        <li>Hierarchy</li>
+        <li>Endogamy</li>
+        <li>Occupational specialization</li>
+      </ul>
+
+      <h2>Change in Caste System</h2>
+      <p>Education, urbanization, and democracy have transformed caste relations.</p>
+
+      <h2>Governance Perspective</h2>
+      <p>Affirmative action and social justice policies are rooted in sociological understanding.</p>
+
+      <h2>Conclusion</h2>
+      <p>Caste remains a powerful social reality requiring nuanced policy responses.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "17 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_caste_system.png"
+  },
+
+  {
+    id: "women-empowerment-india-gs",
+    title: "Women Empowerment in India: Challenges and Progress",
+    excerpt:
+      "Empowering women is central to inclusive development and democratic governance.",
+    content: `
+      <h1>Women Empowerment</h1>
+
+      <p>Women empowerment involves expanding freedoms, opportunities, and agency for women.</p>
+
+      <h2>Key Challenges</h2>
+      <ul>
+        <li>Education gaps</li>
+        <li>Health inequality</li>
+        <li>Workforce participation</li>
+      </ul>
+
+      <h2>Government Initiatives</h2>
+      <p>Policies focus on education, health, and economic inclusion.</p>
+
+      <h2>Conclusion</h2>
+      <p>Women empowerment is both a moral imperative and a development necessity.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "15 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_women_empowerment.png"
+  },
+
+  {
+    id: "bureaucracy-weber-public-admin",
+    title: "Bureaucracy and Administration: Max Weber’s Perspective",
+    excerpt:
+      "Weber’s theory explains the rational foundations of modern bureaucracy.",
+    content: `
+      <h1>Weberian Bureaucracy</h1>
+
+      <p>Max Weber described bureaucracy as the most efficient form of organization in modern society.</p>
+
+      <h2>Features</h2>
+      <ul>
+        <li>Hierarchy</li>
+        <li>Rules and procedures</li>
+        <li>Merit-based recruitment</li>
+      </ul>
+
+      <h2>Criticism</h2>
+      <p>Excessive rigidity and red-tapism are common issues.</p>
+
+      <h2>Conclusion</h2>
+      <p>Bureaucracy remains essential for large-scale governance.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Mar 2024",
+    readTime: "14 min read",
+    category: "GOVERNANCE",
+    image: "/assets/images/blog/blog_bureaucracy_weber.png"
+  },
+
+  {
+    id: "ethics-integrity-civil-services",
+    title: "Integrity and Probity in Civil Services",
+    excerpt:
+      "Integrity is the cornerstone of ethical and effective public administration.",
+    content: `
+      <h1>Integrity in Administration</h1>
+
+      <p>Integrity ensures trust between citizens and the state.</p>
+
+      <h2>Probity in Governance</h2>
+      <p>Probity involves transparency, accountability, and ethical conduct.</p>
+
+      <h2>Ethical Challenges</h2>
+      <p>Corruption and conflicts of interest undermine governance.</p>
+
+      <h2>Conclusion</h2>
+      <p>Ethical administration strengthens democracy.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "14 min read",
+    category: "ETHICS",
+    image: "/assets/images/blog/blog_integrity_probity.png"
+  },
+
+  {
+    id: "urbanization-india-sociology",
+    title: "Urbanization in India: Social Challenges and Opportunities",
+    excerpt:
+      "Urbanization reshapes social relations, economy, and governance.",
+    content: `
+      <h1>Urbanization</h1>
+
+      <p>Urbanization refers to the growth of cities and urban lifestyles.</p>
+
+      <h2>Social Impact</h2>
+      <ul>
+        <li>Migration</li>
+        <li>Slums</li>
+        <li>Changing family structures</li>
+      </ul>
+
+      <h2>Governance Issues</h2>
+      <p>Housing, transport, and sanitation remain critical challenges.</p>
+
+      <h2>Conclusion</h2>
+      <p>Planned urbanization is key to sustainable development.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "16 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_urbanization_india.png"
+  },
+
+  {
+    id: "environment-sustainability-gs3",
+    title: "Environment and Sustainability: GS Paper III Perspective",
+    excerpt:
+      "Environmental protection is central to sustainable development.",
+    content: `
+      <h1>Environment and Sustainability</h1>
+
+      <p>Development without sustainability threatens future generations.</p>
+
+      <h2>Key Issues</h2>
+      <ul>
+        <li>Climate change</li>
+        <li>Pollution</li>
+        <li>Biodiversity loss</li>
+      </ul>
+
+      <h2>Policy Framework</h2>
+      <p>India follows both national and global environmental commitments.</p>
+
+      <h2>Conclusion</h2>
+      <p>Sustainability must guide development decisions.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "17 min read",
+    category: "GENERAL STUDIES",
+    image: "/assets/images/blog/blog_environment_gs3.png"
+  },
+
+  {
+    id: "leadership-civil-services",
+    title: "Leadership in Civil Services: Authority with Empathy",
+    excerpt:
+      "Effective leadership balances authority, ethics, and empathy.",
+    content: `
+      <h1>Leadership in Governance</h1>
+
+      <p>Civil servants are leaders in administration and service delivery.</p>
+
+      <h2>Leadership Qualities</h2>
+      <ul>
+        <li>Integrity</li>
+        <li>Empathy</li>
+        <li>Decision-making</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>Leadership defines administrative success.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "13 min read",
+    category: "ETHICS",
+    image: "/assets/images/blog/blog_leadership_civil_services.png"
+  },
+
+  {
+    id: "globalization-impact-india",
+    title: "Globalization and Its Impact on Indian Society",
+    excerpt:
+      "Globalization reshapes economy, culture, and social relations.",
+    content: `
+      <h1>Globalization</h1>
+
+      <p>Globalization refers to increasing global interconnectedness.</p>
+
+      <h2>Social Impact</h2>
+      <p>It influences culture, employment, and identity.</p>
+
+      <h2>Challenges</h2>
+      <p>Inequality and cultural homogenization are key concerns.</p>
+
+      <h2>Conclusion</h2>
+      <p>Balanced globalization is essential.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "15 min read",
+    category: "SOCIOLOGY",
+    image: "/assets/images/blog/blog_globalization_india.png"
+  },
+
+  {
+    id: "governance-accountability-transparency",
+    title: "Accountability and Transparency in Governance",
+    excerpt:
+      "Transparent governance strengthens democracy and public trust.",
+    content: `
+      <h1>Accountability in Governance</h1>
+
+      <p>Accountability ensures answerability of public institutions.</p>
+
+      <h2>Tools of Accountability</h2>
+      <ul>
+        <li>RTI</li>
+        <li>Audits</li>
+        <li>Social accountability</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>Transparency is the foundation of good governance.</p>
+    `,
+    author: "Dr. Vivekananda IAS Faculty",
+    authorInitial: "V",
+    date: "Apr 2024",
+    readTime: "14 min read",
+    category: "GOVERNANCE",
+    image: "/assets/images/blog/blog_accountability_governance.png"
   }
 ];
 
