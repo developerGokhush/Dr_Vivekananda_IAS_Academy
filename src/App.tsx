@@ -32,9 +32,9 @@ import BlogListing from './pages/BlogListing';
 import BlogDetails from './pages/BlogDetails';
 import Accolades from './pages/Accolades';
 
-// Initialize Google Analytics with a placeholder ID
-// REPLACE 'G-XXXXXXXXXX' with your actual Measurement ID
-ReactGA.initialize("G-PGFM32ENZ3");
+// Initialize Google Analytics using the real measurement ID
+// This matches the tag inserted in index.html
+ReactGA.initialize("G-RQZDKZ4DWV");
 
 function App() {
     return (
