@@ -712,6 +712,7 @@ export const blogPosts: BlogPost[] = [
     category: "GOVERNANCE",
     image: "/assets/images/blog/blog_welfare_schemes.png"
   },
+  {
     id: "tribes-india-anthropology",
     title: "Tribes of India: Identity, Culture, and Administration",
     excerpt:
