@@ -2,9 +2,10 @@ import { useParams, Link } from 'react-router-dom';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { getBlogById, blogPosts } from '../data/blogPosts';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Sun, Moon } from 'lucide-react';
 import './BlogDetails.css';
 import parse from "html-react-parser";
+import { useTheme } from '../hooks/useTheme';
 
 
 const BlogDetails = () => {
@@ -22,9 +23,11 @@ const BlogDetails = () => {
         );
     }
 
+    const { theme, toggle } = useTheme('blog-theme');
+
     return (
         <Layout>
-            <div className="blog-details-page">
+            <div className={`blog-details-page ${theme === 'dark' ? 'dark-mode' : ''}`} data-theme={theme}>
                 <SEO
                     title={`${post.title} | Dr Vivekananda’s IAS Academy`}
                     description={post.excerpt}
@@ -33,6 +36,9 @@ const BlogDetails = () => {
                 />
                 <div className="blog-header">
                     <div className='blog-return-header'>
+                        <button className="theme-toggle" onClick={toggle} aria-label="Toggle dark mode">
+                            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+                        </button>
                         <Link to="/blogs" className="back-to-blog">
                             <ArrowLeft size={20} />
                             Back to Blog Feed

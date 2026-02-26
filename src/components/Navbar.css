@@ -48,7 +48,7 @@
 .nav-link {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--link-color, #4b5563);
+  color: #4b5563;
   position: relative;
   display: inline-block;
 }
@@ -79,23 +79,8 @@
 
 .mobile-toggle {
   display: none;
-  color: var(--text-color);
+  color: #000000;
 }
-
-.theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--text-color);
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-
-.theme-toggle:hover {
-  opacity: 0.8;
-}
-
 
 .mobile-menu {
   display: flex;

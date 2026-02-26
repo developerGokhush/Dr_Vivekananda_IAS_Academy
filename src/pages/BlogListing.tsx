@@ -4,6 +4,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { blogPosts } from '../data/blogPosts';
 import './BlogListing.css';
+import { Sun, Moon } from 'lucide-react';
+import { useTheme } from '../hooks/useTheme';
 
 const BlogListing = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -23,14 +25,19 @@ const BlogListing = () => {
         setVisibleCount((prev) => prev + 6);
     };
 
+    const { theme, toggle } = useTheme('blog-theme');
+
     return (
         <Layout>
-            <div className="blog-listing-page">
+            <div className={`blog-listing-page ${theme === 'dark' ? 'dark-mode' : ''}`} data-theme={theme}>
                 <SEO
                     title="UPSC Blogs & Insights | Dr Vivekananda’s IAS Academy"
                     description="Expert articles and insights on UPSC preparation, current affairs, ethics, and answer writing strategies."
                 />
                 <section className="blog-hero">
+                    <button className="theme-toggle" onClick={toggle} aria-label="Toggle dark mode">
+                        {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+                    </button>
                     <div className="container">
                         <h1 className="section-title-large">Insights & Articles</h1>
                         <p className="blog-subtitle">Expert guidance and analysis for UPSC aspirants</p>
