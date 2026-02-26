@@ -7,7 +7,7 @@
     padding: 4rem 0;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background-color: var(--bg-color);
 }
 
 
@@ -52,13 +52,13 @@
     font-weight: 500;
     line-height: 1.1;
     margin: 0;
-    color: #000000;
+    color: var(--text-color);
     letter-spacing: -2px;
 }
 
 .hero-circular-badge {
     flex-shrink: 0;
-    color: #000000;
+    color: var(--text-color);
     position: absolute;
     left: 50%;
     top: 0;
@@ -105,8 +105,8 @@
 }
 
 .btn-hero-pill {
-    background: #000;
-    color: #fff;
+    background: var(--primary-bg);
+    color: var(--primary-text);
     padding: 1rem 2rem;
     border-radius: 100px;
     font-weight: 700;
@@ -118,7 +118,7 @@
 
 .btn-hero-pill:hover {
     transform: scale(1.05);
-    background: #222;
+    background: rgba(0,0,0,0.85);
 }
 
 
@@ -181,7 +181,7 @@
 
 /* Prep Strip */
 .prep-strip {
-    background: #000000;
+    background: var(--primary-bg);
     padding: 1.5rem 0;
     position: relative;
     z-index: 10;
@@ -189,7 +189,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     overflow: hidden;
     white-space: nowrap;
-    color: #fff;
+    color: var(--primary-text);
 }
 
 .prep-track {
@@ -279,7 +279,7 @@
 
 .more-about-us-section {
     padding: 0;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
 }
 
 .section-header-left {

@@ -132,6 +132,13 @@ export const galleryData: GalleryItem[] = [
         videoUrl: 'https://www.youtube.com/embed/lnsBfaqPbBI?si=YAE_ruu6OCdWMy0l'
     },
     {
+        id: 'p-4',
+        image: '/assets/gallery/ted-talk.jpg',
+        desc: 'Ted Talk on Embracing the Collective Spirit Through Swadharma ',
+        tag: 'Podcasts',
+        videoUrl: 'https://www.youtube.com/embed/ndHW7DG1YLg?si=70BUHRe4YarSFHee'
+    },
+    {
         id: 's-1',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.25 (1).jpeg',
         desc: 'Academy Seminar Session',

@@ -1,7 +1,17 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, ArrowRight } from 'lucide-react';
+import { Menu, X, ArrowRight, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../hooks/useTheme';
 import './Navbar.css';
+
+const ThemeToggle = () => {
+  const { theme, toggle } = useTheme();
+  return (
+    <button className="theme-toggle" onClick={toggle} aria-label="Toggle theme">
+      {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+    </button>
+  );
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,6 +64,9 @@ const Navbar = () => {
             <ArrowRight size={18} className='arrow-btn' />
           </div>
         </Link>
+
+        {/* theme toggle button */}
+        <ThemeToggle />
 
         {/* <div className="nav-right">
           Mobile Toggle */}
