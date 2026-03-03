@@ -57,13 +57,13 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 't-9',
-        image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpeg',
+        image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpg',
         desc: 'Mr. Kanala Sangeeth Madhur, SDM / RDO, Bheemunipatnam Division, Visakhapathnam',
         tag: 'Toppers'
     },
     {
         id: 't-10',
-        image: '/assets/gallery/toppers/Ashok V. Dibbada.jpeg',
+        image: '/assets/gallery/toppers/Ashok V. Dibbada.jpg',
         desc: 'Mr.Ashok V. Dibbada Indian Foreign Service (IFS). Third Secretary (E&C) Embassy of India in Moscow, Russia.',
         tag: 'Toppers'
     },
@@ -74,7 +74,7 @@ export const galleryData: GalleryItem[] = [
         tag: 'Public Events'
     },
     {
-        id: 't-9',
+        id: 't-10',
         image: '/assets/gallery/toppers/With Mr Shashikanth Korravath IRS.jpeg',
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
@@ -194,7 +194,7 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'a-7',
-        image: '/assets/gallery/Felicitation by Students of Telangana Study circle.jpeg',
+        image: '/assets/gallery/Felicitation by Students of Telangana Study circle.jpg',
         desc: 'Felicitation by Students of Telangana Study circle for STs on Ambedkar Jayanti',
         tag: 'Accolades'
     },
@@ -326,19 +326,19 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'pe-17',
-        image: '/assets/gallery/Attending Civil Servants Alumni Association.jpeg',
+        image: '/assets/gallery/Attending Civil Servants Alumni Association.jpg',
         desc: 'Attending Civil Servants Alumni Association Meeting at S V Medical College Tirupati with Dr Dheeraj IPS and Addl SP Kolhapur ',
         tag: 'Public Events'
     },
     {
         id: 'pe-18',
-        image: '/assets/gallery/NCC Day Celebrations.jpeg',
+        image: '/assets/gallery/NCC Day Celebrations.jpg',
         desc: 'Chief Guest at NCC Day Celebrations at Nizam College Hyderabad',
         tag: 'Public Events'
     },
     {
         id: 'pe-19',
-        image: '/assets/gallery/At TS Study Circle for STs.jpeg',
+        image: '/assets/gallery/At TS Study Circle for STs.jpg',
         desc: 'Telangana Study circle for STs',
         tag: 'Public Events'
     }
