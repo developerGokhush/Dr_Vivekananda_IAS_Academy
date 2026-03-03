@@ -56,6 +56,18 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 't-9',
+        image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpeg',
+        desc: 'Mr. Kanala Sangeeth Madhur, SDM / RDO, Bheemunipatnam Division, Visakhapathnam',
+        tag: 'Toppers'
+    },
+    {
+        id: 't-10',
+        image: '/assets/gallery/toppers/Ashok V. Dibbada.jpeg',
+        desc: 'Mr.Ashok V. Dibbada Indian Foreign Service (IFS). Third Secretary (E&C) Embassy of India in Moscow, Russia.',
+        tag: 'Toppers'
+    },
+    {
         id: 'pe-0',
         image: '/assets/gallery/toppers/With Shri Avula Ramesh Reddy Inspector General Police.png',
         desc: 'Warm meet with Shri Avula Ramesh Reddy Inspector General Police',
@@ -178,6 +190,12 @@ export const galleryData: GalleryItem[] = [
         id: 'a-1',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.27 (1).jpeg',
         desc: 'Award at Telangana Today Event',
+        tag: 'Accolades'
+    },
+    {
+        id: 'a-7',
+        image: '/assets/gallery/Felicitation by Students of Telangana Study circle.jpeg',
+        desc: 'Felicitation by Students of Telangana Study circle for STs on Ambedkar Jayanti',
         tag: 'Accolades'
     },
     {
@@ -304,6 +322,24 @@ export const galleryData: GalleryItem[] = [
         id: 'pe-16',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.59.jpeg',
         desc: 'Launch with Chief Guest Jaya Prakash Narayana Sir',
+        tag: 'Public Events'
+    },
+    {
+        id: 'pe-17',
+        image: '/assets/gallery/Attending Civil Servants Alumni Association.jpeg',
+        desc: 'Attending Civil Servants Alumni Association Meeting at S V Medical College Tirupati with Dr Dheeraj IPS and Addl SP Kolhapur ',
+        tag: 'Public Events'
+    },
+    {
+        id: 'pe-18',
+        image: '/assets/gallery/NCC Day Celebrations.jpeg',
+        desc: 'Chief Guest at NCC Day Celebrations at Nizam College Hyderabad',
+        tag: 'Public Events'
+    },
+    {
+        id: 'pe-19',
+        image: '/assets/gallery/At TS Study Circle for STs.jpeg',
+        desc: 'Telangana Study circle for STs',
         tag: 'Public Events'
     }
 ];
