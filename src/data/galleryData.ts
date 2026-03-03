@@ -50,6 +50,12 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 't-8',
+        image: '/assets/gallery/toppers/Mr Praveen Dainampally DySP.jpeg',
+        desc: 'With Mr Praveen Dainampally DySP',
+        tag: 'Toppers'
+    },
+    {
         id: 'pe-0',
         image: '/assets/gallery/toppers/With Shri Avula Ramesh Reddy Inspector General Police.png',
         desc: 'Warm meet with Shri Avula Ramesh Reddy Inspector General Police',
