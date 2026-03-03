@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
         <Link to="/" className="logo">
-          <img src="/assets/images/logo.jpg" alt="Logo" />
+          <img src="/assets/images/logo (3).png" alt="Logo" />
           <span>Dr Vivekananda’s IAS Academy</span>
         </Link>
 
