@@ -41,6 +41,8 @@
   gap: 3rem;
   overflow: hidden;
   padding: 0.75rem 3rem;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 
@@ -139,7 +141,6 @@
 }
 
 .nav-link-transition {
-  margin-bottom: 10px;
   margin-right: clamp(2.5rem, 5vw, 3.5rem);
 }
 

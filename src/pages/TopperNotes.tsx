@@ -92,8 +92,8 @@ const TopperNotes = () => {
                             </>
                         ) : (
                             <div className="no-results">
-                                <h3>No notes found matching "{searchQuery}"</h3>
-                                <p>Try adjusting your search terms or browse all categories.</p>
+                                <h3>Coming soon</h3>
+                                <p>Topper notes will be added shortly. Check back soon.</p>
                             </div>
                         )}
                     </div>
