@@ -30,6 +30,7 @@ import TgpscAppscDetails from './pages/TgpscAppscDetails';
 import TgpscAppscListing from './pages/TgpscAppscListing';
 import BlogListing from './pages/BlogListing';
 import BlogDetails from './pages/BlogDetails';
+import TopperNotes from './pages/TopperNotes';
 import Accolades from './pages/Accolades';
 
 // Initialize Google Analytics using the real measurement ID
@@ -69,6 +70,7 @@ function App() {
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/blogs" element={<BlogListing />} />
                 <Route path="/blogs/:id" element={<BlogDetails />} />
+                <Route path="/topper-notes" element={<TopperNotes />} />
                 <Route path="/accolades" element={<Accolades />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
