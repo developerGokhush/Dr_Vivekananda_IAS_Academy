@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: 'Courses', path: '/courses' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Blogs', path: '/blogs' },
-    { name: 'Topper Notes', path: '/topper-notes' },
+    { name: 'Notes', path: '/topper-notes' },
   ];
 
   return (
