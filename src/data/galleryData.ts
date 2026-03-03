@@ -243,7 +243,7 @@ export const galleryData: GalleryItem[] = [
     {
         id: 's-6',
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.29 (2).jpeg',
-        desc: 'Adressing the event at Ted Talks',
+        desc: 'Adressing the event at Ted  Talks',
         tag: 'Seminars'
     },
     {
