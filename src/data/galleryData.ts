@@ -57,13 +57,13 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 't-9',
-        image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpg',
+        image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpeg',
         desc: 'Mr. Kanala Sangeeth Madhur, SDM / RDO, Bheemunipatnam Division, Visakhapathnam',
         tag: 'Toppers'
     },
     {
         id: 't-10',
-        image: '/assets/gallery/toppers/Ashok V. Dibbada.jpg',
+        image: '/assets/gallery/toppers/Ashok V. Dibbada.jpeg',
         desc: 'Mr.Ashok V. Dibbada Indian Foreign Service (IFS). Third Secretary (E&C) Embassy of India in Moscow, Russia.',
         tag: 'Toppers'
     },
@@ -74,7 +74,7 @@ export const galleryData: GalleryItem[] = [
         tag: 'Public Events'
     },
     {
-        id: 't-10',
+        id: 't-9',
         image: '/assets/gallery/toppers/With Mr Shashikanth Korravath IRS.jpeg',
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
@@ -194,8 +194,14 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'a-7',
-        image: '/assets/gallery/Felicitation by Students of Telangana Study circle.jpg',
+        image: '/assets/gallery/Felicitation by Students of Telangana Study circle.jpeg',
         desc: 'Felicitation by Students of Telangana Study circle for STs on Ambedkar Jayanti',
+        tag: 'Accolades'
+    },
+    {
+        id: 'a-8',
+        image: '/assets/gallery/Mr Shashikanth Korravath IRS.jpg',
+        desc: 'Felicitation by Bhatti Vikramarka Garu',
         tag: 'Accolades'
     },
     {
@@ -227,6 +233,12 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/WhatsApp Image 2026-01-28 at 23.07.28 (2).jpeg',
         desc: 'Faculty Meeting',
         tag: 'Seminars'
+    },
+    {
+        id: 'pe-20',
+        image: '/assets/gallery/eve of opening of New offline facility.jpg',
+        desc: 'Students congratulating on the eve of opening of New offline facility',
+        tag: 'Public Events'
     },
     {
         id: 's-5',
@@ -326,19 +338,19 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'pe-17',
-        image: '/assets/gallery/Attending Civil Servants Alumni Association.jpg',
+        image: '/assets/gallery/Attending Civil Servants Alumni Association.jpeg',
         desc: 'Attending Civil Servants Alumni Association Meeting at S V Medical College Tirupati with Dr Dheeraj IPS and Addl SP Kolhapur ',
         tag: 'Public Events'
     },
     {
         id: 'pe-18',
-        image: '/assets/gallery/NCC Day Celebrations.jpg',
+        image: '/assets/gallery/NCC Day Celebrations.jpeg',
         desc: 'Chief Guest at NCC Day Celebrations at Nizam College Hyderabad',
         tag: 'Public Events'
     },
     {
         id: 'pe-19',
-        image: '/assets/gallery/At TS Study Circle for STs.jpg',
+        image: '/assets/gallery/At TS Study Circle for STs.jpeg',
         desc: 'Telangana Study circle for STs',
         tag: 'Public Events'
     }
