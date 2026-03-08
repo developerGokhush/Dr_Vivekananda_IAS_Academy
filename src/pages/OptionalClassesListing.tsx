@@ -35,7 +35,7 @@ const OptionalClassesListing = () => {
                                             ))}
                                         </ul>
                                         <div className="optional-footer">
-                                            <span className="optional-fee">{course.fee}</span>
+                                            <span className="optional-date">{course.date}</span>
                                             <Link to={`/courses/optional-classes/${course.id}`} className="btn-explore">
                                                 Explore More <ArrowRight size={16} />
                                             </Link>

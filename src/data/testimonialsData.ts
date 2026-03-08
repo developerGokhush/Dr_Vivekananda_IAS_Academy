@@ -21,7 +21,7 @@ export const testimonials: Testimonial[] = [
         name: 'Benjo P. Jose',
         role: 'AIR 59 (UPSC 2023)',
         image: '/assets/gallery/Benjo P. Jose Air 59.png',
-        quote: "Scoring 300+ in Anthropology was possible due to the structured thinking and foundational clarity provided by Dr. Vivekananda sir.",
+        quote: "Scoring 300+ in Anthropology was possible due to the structured thinking, mentorship and foundational clarity provided by Dr. Vivekananda sir.",
         videoUrl: 'https://www.youtube.com/embed/PHgrKsMPmiU?si=m2zroJrXhoVIQh-H'
     },
     {
@@ -53,7 +53,7 @@ export const testimonials: Testimonial[] = [
         name: 'K Pranay Kumar',
         role: 'AIR 554 (UPSC 2023)',
         image: '/assets/gallery/K Pranay Kumar Air 554.png',
-        quote: "Constant motivation and direct access for doubt clearance sets this academy apart. It was a crucial part of my UPSC journey.",
+        quote: "Constant motivation, mentorship strategy and direct access for doubt clearance sets this academy apart. It was a crucial part of my UPSC journey.",
         videoUrl: 'https://www.youtube.com/embed/Gg_E7MVb-aA'
     },
     {
@@ -61,7 +61,7 @@ export const testimonials: Testimonial[] = [
         name: 'Navpada Ashritha',
         role: 'AIR 315 (UPSC 2022)',
         image: '/assets/gallery/Navpada Ashritha Air 315.png',
-        quote: "Dr. Vivekananda's ability to simplify complex concepts and his weekly monitoring of preparation progress were key to my success.",
+        quote: "Dr. Vivekananda's ability to simplify complex concepts and his weekly monitoring of preparation progress were crucial to my success.",
         videoUrl: 'https://www.youtube.com/embed/0ELKcNfXYHE'
     }
 ];

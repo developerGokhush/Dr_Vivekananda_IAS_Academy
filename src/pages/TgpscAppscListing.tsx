@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
-import { TgpscAppscCourses } from '../data/tgpscAppscCourses';
+import { tgpscCourses } from '../data/tgpscCourses';
 import './OptionalClassesListing.css'; // Reusing styles
 
 const TgpscAppscListing = () => {
@@ -19,8 +19,8 @@ const TgpscAppscListing = () => {
             <p className="section-subtitle-center">Comprehensive coaching for State Public Service Commission exams.</p>
 
             <div className="optional-grid">
-              {TgpscAppscCourses.length > 0 ? (
-                TgpscAppscCourses.map((course) => (
+              {tgpscCourses.length > 0 ? (
+                tgpscCourses.map((course) => (
                   <Link to={`/courses/tgpsc-appsc/${course.id}`} key={course.id} className="optional-card-large">
                     <div className="optional-img-wrap">
                       <img src={course.image} alt={course.title} />

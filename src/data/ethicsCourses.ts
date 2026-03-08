@@ -12,6 +12,8 @@ export interface EthicsCourseData {
     alt?: string;
     seoTitle?: string;
     seoDescription?: string;
+    duration?: string;
+
 }
 
 export const ethicsCourses: EthicsCourseData[] = [

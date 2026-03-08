@@ -9,6 +9,8 @@ export interface EssayCourseData {
     usps: string[];
     details: string[];
     image: string;
+    duration?: string;
+
 }
 
 export const essayCourses: EssayCourseData[] = [

@@ -25,11 +25,11 @@ const Director = () => {
                         <div className="director-stats-grid">
                             <div className="director-stat">
                                 <span className="stat-label">Experience</span>
-                                <span className="stat-value">9+ Years</span>
+                                <span className="stat-value">7+ Years</span>
                             </div>
                             <div className="director-stat">
                                 <span className="stat-label">UPSC Selections</span>
-                                <span className="stat-value">74+</span>
+                                <span className="stat-value">85+</span>
                             </div>
                             <div className="director-stat">
                                 <span className="stat-label">State Selections</span>

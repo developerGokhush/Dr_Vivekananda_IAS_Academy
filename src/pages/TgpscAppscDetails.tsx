@@ -1,13 +1,13 @@
 import Layout from '../components/Layout';
 import { useParams, Navigate } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { TgpscAppscCourses } from '../data/tgpscAppscCourses';
+import { tgpscCourses } from '../data/tgpscCourses';
 import { Check, Clock, Calendar, User, CreditCard, BookOpen } from 'lucide-react';
 import './OptionalClassesDetails.css'; // Reusing styles
 
 const TgpscAppscDetails = () => {
   const { id } = useParams<{ id: string }>();
-  const course = TgpscAppscCourses.find((c) => c.id === id);
+  const course = tgpscCourses.find((c) => c.id === id);
 
   if (!course) {
     return <Navigate to="/courses/appsc" replace />;

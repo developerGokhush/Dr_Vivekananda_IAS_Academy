@@ -13,7 +13,7 @@ export interface CourseData {
   image: string;
 }
 
-export const TgpscAppscCourses: CourseData[] = [
+export const tgpscCourses: CourseData[] = [
   {
     id: 't-jagruthi',
     title: 'T-Jagruthi',

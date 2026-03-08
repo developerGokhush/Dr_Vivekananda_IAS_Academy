@@ -1,32 +1,143 @@
 import Layout from '../components/Layout';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import SEO from '../components/SEO';
-import { optionalClassesCourses } from '../data/optionalClassesCourses';
+import { optionalClassesCourses, CourseData, tgpscCourses, mentorshipCourses, optionalMentorshipCourses, essayCourses, ethicsCourses, valueAdditionCourses } from '../data';
 import { testimonials } from '../data/testimonialsData';
-import { Clock, Calendar, User, Play, FileText, Award, MonitorPlay, ChevronLeft, ChevronRight, X, ChevronUp, ChevronDown } from 'lucide-react';
-import { useState, useEffect, useRef } from 'react';
+import { Clock, Calendar, User, Play, FileText, Award, MonitorPlay, ChevronLeft, ChevronRight, X, ChevronUp, ChevronDown, Download } from 'lucide-react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import './OptionalClassesDetails.css';
 import { AnimatePresence, motion } from 'framer-motion';
 
-const OptionalClassesDetails = () => {
-    const { id } = useParams<{ id: string }>();
-    const course = optionalClassesCourses.find((c) => c.id === id);
-    const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
-
-    // We duplicate the testimonials array to fake an infinite scroll
-    const EXTENDED_TESTIMONIALS = [...testimonials, ...testimonials, ...testimonials];
-    const ORIGINAL_LENGTH = testimonials.length;
-
+// Custom Hook for Infinite CSS Carousel logic
+function useInfiniteCarousel(originalLength: number, autoScrollInterval: number = 4000, rootMargin: string = '0px') {
     const carouselRef = useRef<HTMLDivElement>(null);
     const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-
-    // Start at the first element of the middle set
-    const [activeIndex, setActiveIndex] = useState(ORIGINAL_LENGTH);
+    const [activeIndex, setActiveIndex] = useState(originalLength);
     const isHovered = useRef(false);
     const isScrolling = useRef(false);
 
+    const scrollToCard = useCallback((index: number, behavior: ScrollBehavior = 'smooth') => {
+        if (!carouselRef.current || !cardRefs.current[index]) return;
+        const container = carouselRef.current;
+        const card = cardRefs.current[index];
+
+        const scrollPosition = card.offsetLeft - (container.clientWidth / 2) + (card.clientWidth / 2);
+        container.scrollTo({
+            left: scrollPosition,
+            behavior
+        });
+    }, []);
+
+    // Initial center on mount
+    useEffect(() => {
+        setTimeout(() => {
+            scrollToCard(originalLength, 'auto');
+        }, 100);
+    }, [originalLength, scrollToCard]);
+
+    // Intersection observer
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const index = Number(entry.target.getAttribute('data-index'));
+                        setActiveIndex(index);
+                    }
+                });
+            },
+            {
+                root: carouselRef.current,
+                threshold: 0.6,
+                rootMargin: rootMargin
+            }
+        );
+
+        cardRefs.current.forEach((card) => {
+            if (card) observer.observe(card);
+        });
+
+        return () => observer.disconnect();
+    }, [originalLength]);
+
+    // Seamless infinite loop jump
+    useEffect(() => {
+        const handleScrollEnd = () => {
+            if (!carouselRef.current || isScrolling.current) return;
+
+            if (activeIndex < originalLength) {
+                isScrolling.current = true;
+                const targetIndex = activeIndex + originalLength;
+
+                carouselRef.current.style.scrollBehavior = 'auto';
+                scrollToCard(targetIndex, 'auto');
+                setActiveIndex(targetIndex);
+
+                requestAnimationFrame(() => {
+                    if (carouselRef.current) {
+                        carouselRef.current.style.scrollBehavior = 'smooth';
+                        isScrolling.current = false;
+                    }
+                });
+            } else if (activeIndex >= originalLength * 2) {
+                isScrolling.current = true;
+                const targetIndex = activeIndex - originalLength;
+
+                carouselRef.current.style.scrollBehavior = 'auto';
+                scrollToCard(targetIndex, 'auto');
+                setActiveIndex(targetIndex);
+
+                requestAnimationFrame(() => {
+                    if (carouselRef.current) {
+                        carouselRef.current.style.scrollBehavior = 'smooth';
+                        isScrolling.current = false;
+                    }
+                });
+            }
+        };
+
+        const timeout = setTimeout(handleScrollEnd, 600);
+        return () => clearTimeout(timeout);
+    }, [activeIndex, originalLength, scrollToCard]);
+
+    // Auto scroll interval
+    useEffect(() => {
+        if (autoScrollInterval <= 0) return;
+
+        const interval = setInterval(() => {
+            if (!isHovered.current && carouselRef.current && !isScrolling.current) {
+                const nextIndex = activeIndex + 1;
+                if (cardRefs.current[nextIndex]) {
+                    scrollToCard(nextIndex, 'smooth');
+                }
+            }
+        }, autoScrollInterval);
+
+        return () => clearInterval(interval);
+    }, [activeIndex, autoScrollInterval, scrollToCard]);
+
+    const scrollCarousel = useCallback((direction: 'left' | 'right') => {
+        if (isScrolling.current) return;
+        const nextIndex = direction === 'left' ? activeIndex - 1 : activeIndex + 1;
+        scrollToCard(nextIndex, 'smooth');
+    }, [activeIndex, scrollToCard]);
+
+    return {
+        carouselRef,
+        cardRefs,
+        activeIndex,
+        isHovered,
+        scrollCarousel
+    };
+}
+
+const OptionalClassesDetails = () => {
+    const { id } = useParams<{ id: string }>();
+    const course = optionalClassesCourses.find((c) => c.id === id) as CourseData;
+    const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
     // Track array of independently open modules (default first open)
-    const [openModules, setOpenModules] = useState<number[]>([0]);
+    const [openModules, setOpenModules] = useState<number[]>([-1]);
 
     const toggleModule = (index: number) => {
         setOpenModules(prev =>
@@ -44,118 +155,31 @@ const OptionalClassesDetails = () => {
         );
     };
 
-    // Passive scroll helper avoiding page-level scrollIntoview disruption
-    const scrollToCard = (index: number, behavior: ScrollBehavior = 'smooth') => {
-        if (!carouselRef.current || !cardRefs.current[index]) return;
-        const container = carouselRef.current;
-        const card = cardRefs.current[index];
+    // --- TESTIMONIALS CAROUSEL ---
+    const ORIGINAL_TESTIMONIALS_LENGTH = testimonials.length;
+    const EXTENDED_TESTIMONIALS = [...testimonials, ...testimonials, ...testimonials];
+    // Shrink the observer root by 30% on both sides so that only the horizontally centered card triggers the 'active' scaling
+    const testimonialsCarousel = useInfiniteCarousel(ORIGINAL_TESTIMONIALS_LENGTH, 4000, '0px -30% 0px -30%');
 
-        // Calculate the perfectly centered horizontal scroll position locally
-        const scrollPosition = card.offsetLeft - (container.clientWidth / 2) + (card.clientWidth / 2);
-        container.scrollTo({
-            left: scrollPosition,
-            behavior
-        });
-    };
-
-    // Initial center on mount
-    useEffect(() => {
-        // small timeout ensures layout is painted before checking offsets
-        setTimeout(() => {
-            scrollToCard(ORIGINAL_LENGTH, 'auto');
-        }, 100);
-    }, [ORIGINAL_LENGTH]);
-
-    // Intersection observer to track active index
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        const index = Number(entry.target.getAttribute('data-index'));
-                        setActiveIndex(index);
-                    }
-                });
-            },
-            {
-                root: carouselRef.current,
-                threshold: 0.6,
-            }
-        );
-
-        cardRefs.current.forEach((card) => {
-            if (card) observer.observe(card);
-        });
-
-        return () => observer.disconnect();
-    }, [EXTENDED_TESTIMONIALS.length]);
-
-    // Handle seamless infinite loop jump logic
-    useEffect(() => {
-        const handleScrollEnd = () => {
-            if (!carouselRef.current || isScrolling.current) return;
-
-            // If we've reached the duplicated items on the far left
-            if (activeIndex < ORIGINAL_LENGTH) {
-                isScrolling.current = true;
-                const targetIndex = activeIndex + ORIGINAL_LENGTH;
-
-                // Briefly disable scroll behavior to snap instantly
-                carouselRef.current.style.scrollBehavior = 'auto';
-                scrollToCard(targetIndex, 'auto');
-                setActiveIndex(targetIndex);
-
-                // Restore smooth scrolling on the next frame
-                requestAnimationFrame(() => {
-                    if (carouselRef.current) {
-                        carouselRef.current.style.scrollBehavior = 'smooth';
-                        isScrolling.current = false;
-                    }
-                });
-            }
-            // If we've reached the duplicated items on the far right
-            else if (activeIndex >= ORIGINAL_LENGTH * 2) {
-                isScrolling.current = true;
-                const targetIndex = activeIndex - ORIGINAL_LENGTH;
-
-                carouselRef.current.style.scrollBehavior = 'auto';
-                scrollToCard(targetIndex, 'auto');
-                setActiveIndex(targetIndex);
-
-                requestAnimationFrame(() => {
-                    if (carouselRef.current) {
-                        carouselRef.current.style.scrollBehavior = 'smooth';
-                        isScrolling.current = false;
-                    }
-                });
-            }
-        };
-
-        // Delay checking end of scroll to allow smooth transition to finish natively
-        const timeout = setTimeout(handleScrollEnd, 600);
-        return () => clearTimeout(timeout);
-    }, [activeIndex, ORIGINAL_LENGTH]);
-
-    // Auto scroll interval
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (!isHovered.current && carouselRef.current && !isScrolling.current) {
-                const nextIndex = activeIndex + 1;
-                if (cardRefs.current[nextIndex]) {
-                    scrollToCard(nextIndex, 'smooth');
-                }
-            }
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, [activeIndex]);
-
-    const scrollCarousel = (direction: 'left' | 'right') => {
-        if (isScrolling.current) return;
-
-        const nextIndex = direction === 'left' ? activeIndex - 1 : activeIndex + 1;
-        scrollToCard(nextIndex, 'smooth');
-    };
+    // --- RELATED COURSES CAROUSEL ---
+    // User requested to display ALL options here, dynamically filtering out the current course
+    const allRelatedCourses = [
+        ...(optionalClassesCourses?.filter((c) => c.id !== course?.id) || []),
+        ...optionalMentorshipCourses,
+        ...ethicsCourses,
+        ...essayCourses,
+        ...mentorshipCourses,
+        ...valueAdditionCourses,
+        ...tgpscCourses
+    ];
+    const ORIGINAL_RELATED_LENGTH = allRelatedCourses.length;
+    // We only duplicate if there are elements enough to loop, otherwise handle gracefully
+    // Usually infinite scrolls require at least 3 items to loop cleanly without flicker
+    const EXTENDED_RELATED_COURSES = ORIGINAL_RELATED_LENGTH > 0
+        ? [...allRelatedCourses, ...allRelatedCourses, ...allRelatedCourses]
+        : [];
+    // Shrink the observer root by 30% on both sides so that only the horizontally centered card triggers the 'active' scaling
+    const relatedCoursesCarousel = useInfiniteCarousel(ORIGINAL_RELATED_LENGTH, 6000, '0px -30% 0px -30%');
 
     if (!course) {
         return <Navigate to="/courses/optional-classes" replace />;
@@ -189,13 +213,13 @@ const OptionalClassesDetails = () => {
 
                                 <div className="hero-actions">
                                     <button
-                                        className="btn-primary"
+                                        className="optional-courses-btn-primary"
                                         onClick={() => window.open("https://forms.gle/xhF7LmAe6cCMPfye8", "_blank")}
                                     >
                                         Enroll Now
                                     </button>
                                     <button
-                                        className="btn-secondary"
+                                        className="optional-courses-btn-secondary"
                                         onClick={() => window.open("https://forms.gle/xhF7LmAe6cCMPfye8", "_blank")}
                                     >
                                         Enquire Now
@@ -274,6 +298,9 @@ const OptionalClassesDetails = () => {
                             <div className="program-features-section">
                                 <div className="section-header-flex">
                                     <h2>Courses Content</h2>
+                                    <button className="btn-download-brochure" onClick={() => window.open('/assets/brochures/course-brochure.pdf', '_blank')}>
+                                        <Download size={18} /> Download Brochure
+                                    </button>
                                 </div>
                                 <div className="features-list-styled">
                                     {course.lessons.map((lesson, index) => {
@@ -364,14 +391,38 @@ const OptionalClassesDetails = () => {
                         {/* Taught By The Best */}
                         <div className="instructors-section">
                             <h2>Taught By The Best</h2>
-                            <div className="instructor-card">
-                                <div className="instructor-avatar">
+                            <div className="instructor-full-card">
+                                <div className="instructor-avatar-large">
                                     <img src="/assets/images/director3.jpeg" alt={course.faculty} />
                                 </div>
-                                <div className="instructor-info">
-                                    <h3>{course.faculty}</h3>
-                                    <p>Director & Lead Faculty</p>
-                                    <button className="btn-view-profile">View Profile</button>
+                                <div className="instructor-content-wide">
+                                    <div className="instructor-header-wide">
+                                        <div className="instructor-badges-row">
+                                            <span className="instructor-badge">Lead Faculty</span>
+                                        </div>
+                                        <h3>{course.faculty}</h3>
+                                        <p className="instructor-title">Director, Dr. Vivekananda's IAS Academy</p>
+                                    </div>
+
+                                    <div className="instructor-stats-row">
+                                        <div className="instructor-stat-item">
+                                            <Award size={18} />
+                                            <span><strong>7+ Years</strong> Teaching Experience</span>
+                                        </div>
+                                        <div className="instructor-stat-item">
+                                            <Award size={18} />
+                                            <span><strong>85+ Ranks</strong> Produced in 4 Years</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="instructor-quote-wide">
+                                        <p>"{course.faculty} is dedicated to providing strategic, result-oriented mentoring to help aspirants master their optional subjects and secure top ranks in the UPSC civil services examination."</p>
+                                    </div>
+                                    <div className="instructor-action-wide">
+                                        <Link to={`/director`} className="btn-view-profile-solid">
+                                            View Full Profile &rarr;
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -384,27 +435,27 @@ const OptionalClassesDetails = () => {
                         </div>
                         <div
                             className="carousel-wrapper"
-                            onMouseEnter={() => isHovered.current = true}
-                            onMouseLeave={() => isHovered.current = false}
+                            onMouseEnter={() => testimonialsCarousel.isHovered.current = true}
+                            onMouseLeave={() => testimonialsCarousel.isHovered.current = false}
                         >
-                            <button className="carousel-btn prev-btn" onClick={() => scrollCarousel('left')}>
+                            <button className="carousel-btn prev-btn" onClick={() => testimonialsCarousel.scrollCarousel('left')}>
                                 <ChevronLeft size={24} />
                             </button>
 
-                            <div className="testimonials-carousel" ref={carouselRef}>
+                            <div className="infinite-carousel" ref={testimonialsCarousel.carouselRef}>
                                 {EXTENDED_TESTIMONIALS.map((testimonial, index) => {
                                     // By matching the modulo, the clone and original have the EXACT 
                                     // same CSS state during the instant snap, preventing transition flickers.
-                                    const isActive = (index % ORIGINAL_LENGTH) === (activeIndex % ORIGINAL_LENGTH);
+                                    const isActive = (index % ORIGINAL_TESTIMONIALS_LENGTH) === (testimonialsCarousel.activeIndex % ORIGINAL_TESTIMONIALS_LENGTH);
                                     // A unique key is crucial since we repeat IDs.
                                     const unqKey = `${testimonial.id}-${index}`;
 
                                     return (
                                         <div
-                                            className={`testimonial-card gallery-style-card ${isActive ? 'active' : ''}`}
+                                            className={`testimonial-card infinite-carousel-card ${isActive ? 'active' : ''}`}
                                             key={unqKey}
                                             data-index={index}
-                                            ref={(el) => (cardRefs.current[index] = el)}
+                                            ref={(el) => (testimonialsCarousel.cardRefs.current[index] = el)}
                                         >
                                             <motion.div
                                                 layout
@@ -428,7 +479,7 @@ const OptionalClassesDetails = () => {
                                                     <span className="gallery-tag">{testimonial.role}</span>
                                                     <h3 className="testimonial-name">{testimonial.name}</h3>
                                                     <p className="gallery-desc testimonial-quote">"{testimonial.quote}"</p>
-                                                    <button className="dummy-read-more-btn">Read full story</button>
+                                                    <button className="dummy-read-more-btn" onClick={() => console.log('click1')}>Read full story</button>
                                                 </div>
                                             </motion.div>
                                         </div>
@@ -436,7 +487,7 @@ const OptionalClassesDetails = () => {
                                 })}
                             </div>
 
-                            <button className="carousel-btn next-btn" onClick={() => scrollCarousel('right')}>
+                            <button className="carousel-btn next-btn" onClick={() => testimonialsCarousel.scrollCarousel('right')}>
                                 <ChevronRight size={24} />
                             </button>
                         </div>
@@ -447,39 +498,63 @@ const OptionalClassesDetails = () => {
                 <section className="related-courses-section">
                     <div className="container">
                         <h2>Related Optional Classes</h2>
-                        <div className="related-grid">
-                            {optionalClassesCourses
-                                .filter(c => c.id !== course.id)
-                                .slice(0, 3)
-                                .map(related => (
-                                    <div className="related-course-card" key={related.id}>
-                                        <div className="related-image">
-                                            <img src={related.image} alt={related.title} />
+                        <div
+                            className="carousel-wrapper"
+                            onMouseEnter={() => relatedCoursesCarousel.isHovered.current = true}
+                            onMouseLeave={() => relatedCoursesCarousel.isHovered.current = false}
+                        >
+                            {ORIGINAL_RELATED_LENGTH > 0 && (
+                                <button className="carousel-btn prev-btn" onClick={() => relatedCoursesCarousel.scrollCarousel('left')}>
+                                    <ChevronLeft size={24} />
+                                </button>
+                            )}
+
+                            <div className="infinite-carousel" ref={relatedCoursesCarousel.carouselRef}>
+                                {EXTENDED_RELATED_COURSES.map((related, index) => {
+                                    const isActive = (index % ORIGINAL_RELATED_LENGTH) === (relatedCoursesCarousel.activeIndex % ORIGINAL_RELATED_LENGTH);
+                                    const unqKey = `${related.id}-${index}`;
+
+                                    return (
+                                        <div
+                                            className={`related-course-card infinite-carousel-card ${isActive ? 'active' : ''}`}
+                                            key={unqKey}
+                                            data-index={index}
+                                            ref={(el) => (relatedCoursesCarousel.cardRefs.current[index] = el)}
+                                        >
+                                            <div className="related-image">
+                                                <img src={related.image} alt={related.title} />
+                                            </div>
+                                            <div className="related-content">
+                                                <h3>{related.title}</h3>
+                                                <div className="related-meta">
+                                                    <span><User size={14} /> {related.faculty}</span>
+                                                    <span><Clock size={14} /> {related.duration}</span>
+                                                </div>
+                                                <div className="related-footer">
+                                                    <Link to={`/courses/optional-classes/${related.id}`} className="view-details-link">
+                                                        View Details &rarr;
+                                                    </Link>
+                                                </div>
+                                            </div>
                                         </div>
+                                    );
+                                })}
+
+                                {ORIGINAL_RELATED_LENGTH === 0 && (
+                                    <div className="related-course-card dummy-card-related infinite-carousel-card active">
+                                        <div className="related-image placeholder-grad"></div>
                                         <div className="related-content">
-                                            <h3>{related.title}</h3>
-                                            <div className="related-meta">
-                                                <span><User size={14} /> {related.faculty}</span>
-                                                <span><Clock size={14} /> {related.duration}</span>
-                                            </div>
-                                            <div className="related-footer">
-                                                <Link to={`/courses/optional-classes/${related.id}`} className="view-details-link">
-                                                    View Details &rarr;
-                                                </Link>
-                                            </div>
+                                            <h3>More courses coming soon</h3>
+                                            <p>Stay tuned for upcoming optional modules.</p>
                                         </div>
                                     </div>
-                                ))
-                            }
-                            {/* Dummy Card if only 1 related course exists */}
-                            {optionalClassesCourses.filter(c => c.id !== course.id).length < 2 && (
-                                <div className="related-course-card dummy-card-related">
-                                    <div className="related-image placeholder-grad"></div>
-                                    <div className="related-content">
-                                        <h3>More courses coming soon</h3>
-                                        <p>Stay tuned for upcoming optional modules.</p>
-                                    </div>
-                                </div>
+                                )}
+                            </div>
+
+                            {ORIGINAL_RELATED_LENGTH > 0 && (
+                                <button className="carousel-btn next-btn" onClick={() => relatedCoursesCarousel.scrollCarousel('right')}>
+                                    <ChevronRight size={24} />
+                                </button>
                             )}
                         </div>
                     </div>
