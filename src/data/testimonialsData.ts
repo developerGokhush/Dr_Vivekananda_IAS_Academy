@@ -9,43 +9,59 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
     {
-        id: '1',
-        name: 'Banna Venkatesh',
-        role: 'AIR-15 IAS (Under Trainee)',
-        image: '/assets/gallery/With Banna Venkatesh AIR-15 IAS (Under Trainee).jpeg',
-        quote: "Dr. Vivekananda sir’s guidance was pivotal in my journey. His anthropology classes gave me the conceptual clarity I needed to score high.",
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ' // Placeholder
+        id: 'tm-1',
+        name: 'Dr Krishna',
+        role: 'AIR 155 (2025)',
+        image: '/assets/gallery/Dr krishna Air 155.png',
+        quote: "Dr. Vivekananda's Anthropology classes are exceptional. The conceptual clarity and personalized mentorship were instrumental in securing my rank.",
+        videoUrl: 'https://www.youtube.com/embed/lHlvCOdxWGc?si=ZPv7Ew9rdAtWyjN1'
     },
     {
-        id: '2',
-        name: 'Bhargav Potupureddi',
-        role: 'IPS (Under Trainee)',
-        image: '/assets/gallery/With Bhargav Potupureddi IPS (Under Trainee).jpeg',
-        quote: "The personalized mentorship and the disciplined approach at the academy helped me stay focused throughout the preparation.",
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        id: 'tm-2',
+        name: 'Benjo P. Jose',
+        role: 'AIR 59 (UPSC 2023)',
+        image: '/assets/gallery/Benjo P. Jose Air 59.png',
+        quote: "Scoring 300+ in Anthropology was possible due to the structured thinking and foundational clarity provided by Dr. Vivekananda sir.",
+        videoUrl: 'https://www.youtube.com/embed/PHgrKsMPmiU?si=m2zroJrXhoVIQh-H'
     },
     {
-        id: '3',
-        name: 'Chaitanya Reddy',
-        role: 'IPS Addl SP, Kamareddy',
-        image: '/assets/gallery/With Chaitanya Reddy IPS Addl Superintendent of Police, Kamareddy.jpeg',
-        quote: "The test series and the detailed feedback on my answers were instrumental in improving my writing skills.",
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        id: 'tm-3',
+        name: 'K Srinivasulu',
+        role: 'AIR 526 (UPSC 2023)',
+        image: '/assets/gallery/K Srinivasulu Air 526.png',
+        quote: "The Mains answer writing approach with a focus on PYQs helped me immensely. I highly recommend the academy for Anthropology optional.",
+        videoUrl: 'https://www.youtube.com/embed/woMc4QbUwW4'
     },
     {
-        id: '4',
-        name: 'Mantri Mourya Bharadwaj',
-        role: 'IAS Joint Collector',
-        image: '/assets/gallery/With Mantri Mourya Bharadwaj IAS Joint Collector & Addl District Magistrate Puttaparthi Sri Satya Sai District.jpeg',
-        quote: "Consistency is key, and this academy provides the perfect environment to maintain it. Truly grateful for the support.",
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        id: 'tm-4',
+        name: 'Sahana',
+        role: 'AIR 739 (UPSC 2023)',
+        image: '/assets/gallery/Sahana Air 739.png',
+        quote: "The detailed PDFs provided after every class made revision incredibly efficient. A big thank you to Dr. Vivekananda sir for his continuous guidance.",
+        videoUrl: 'https://www.youtube.com/embed/kEjxUL7iTY4'
     },
     {
-        id: '5',
-        name: 'Mounika P',
-        role: 'IPS Addl SP, Adilabad',
-        image: '/assets/gallery/With Mounika.P IPS Addl SP, Adilabad.jpeg',
-        quote: "A transformative journey. The faculty doesn't just teach, they mentor you for life as a civil servant.",
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+        id: 'tm-5',
+        name: 'Dr Vineeth',
+        role: 'AIR 169 (UPSC 2023)',
+        image: '/assets/gallery/Dr Vineeth Air 169.png',
+        quote: "The strategic approach to tackling Anthropology, combined with the comprehensive test series, gave me the confidence to excel.",
+        videoUrl: 'https://www.youtube.com/embed/7dv-01BLNj0'
+    },
+    {
+        id: 'tm-6',
+        name: 'K Pranay Kumar',
+        role: 'AIR 554 (UPSC 2023)',
+        image: '/assets/gallery/K Pranay Kumar Air 554.png',
+        quote: "Constant motivation and direct access for doubt clearance sets this academy apart. It was a crucial part of my UPSC journey.",
+        videoUrl: 'https://www.youtube.com/embed/Gg_E7MVb-aA'
+    },
+    {
+        id: 'tm-7',
+        name: 'Navpada Ashritha',
+        role: 'AIR 315 (UPSC 2022)',
+        image: '/assets/gallery/Navpada Ashritha Air 315.png',
+        quote: "Dr. Vivekananda's ability to simplify complex concepts and his weekly monitoring of preparation progress were key to my success.",
+        videoUrl: 'https://www.youtube.com/embed/0ELKcNfXYHE'
     }
 ];
