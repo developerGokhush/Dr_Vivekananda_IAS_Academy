@@ -26,6 +26,27 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 'tm-8',
+        image: '/assets/gallery/Atla Tharun Teja.jpg',
+        desc: 'Atla Tharun Teja, securing AIR 123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/shorts/rAW-7VRwTng?si=lz9dS71JPUwfojpQ'
+    },
+    {
+        id: 'tm-9',
+        image: '/assets/gallery/Harshitha Medara.jpg',
+        desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/shorts/TiEP1sx3hAg'
+    },
+    {
+        id: 'tm-10',
+        image: '/assets/gallery/Dainampally Dysp on securing AIR 793 in UPSC.png',
+        desc: 'Dainampally Dysp on securing AIR 793 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/shorts/OeVxmCtDCSo'
+    },
+    {
         id: 't-1',
         image: '/assets/gallery/toppers/With Banna Venkatesh AIR-15 IAS (Under Trainee).jpeg',
         desc: 'With Banna Venkatesh AIR-15 IAS (Under Trainee)',
