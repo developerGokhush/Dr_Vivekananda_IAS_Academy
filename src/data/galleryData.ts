@@ -9,19 +9,19 @@ export interface GalleryItem {
 export const galleryData: GalleryItem[] = [
     {
         id: 't-13',
-        image: '/assets/gallery/toppers/Mr Praveen Dainampally DySP.jpg',
+        image: '/assets/gallery/Mr Praveen Dainampally DySP.jpg',
         desc: 'With Mr Praveen Dainampally DySP ',
         tag: 'Toppers'
     },
     {
         id: 't-12',
-        image: '/assets/gallery/toppers/PrachetDSK.jpg',
+        image: '/assets/gallery/PrachetDSK.jpg',
         desc: 'With Prachet DSK(AIR - 193)',
         tag: 'Toppers'
     },
     {
         id: 't-11',
-        image: '/assets/gallery/toppers/PratyushaKatta.jpg',
+        image: '/assets/gallery/PratyushaKatta.jpg',
         desc: 'With Pratyusha Katta (AIR - 908)',
         tag: 'Toppers'
     },
