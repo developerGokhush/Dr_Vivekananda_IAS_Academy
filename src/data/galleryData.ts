@@ -27,24 +27,24 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'tm-8',
-        image: '/assets/gallery/Atla Tharun Teja.jpg',
+        image: '/assets/gallery/Atla Tharun Teja1.jpg',
         desc: 'Atla Tharun Teja, securing AIR 123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://youtube.com/shorts/rAW-7VRwTng?si=lz9dS71JPUwfojpQ'
+        videoUrl: 'https://www.youtube.com/embed/rAW-7VRwTng'
     },
     {
         id: 'tm-9',
-        image: '/assets/gallery/Harshitha Medara.jpg',
+        image: '/assets/gallery/Harshitha Medara (2).jpg',
         desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/shorts/TiEP1sx3hAg'
+        videoUrl: 'https://www.youtube.com/embed/LlCC2VALtZM'
     },
     {
         id: 'tm-10',
-        image: '/assets/gallery/Dainampally Dysp on securing AIR 793 in UPSC.png',
+        image: '/assets/gallery/praveen.jpg',
         desc: 'Dainampally Dysp on securing AIR 793 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/shorts/OeVxmCtDCSo'
+        videoUrl: 'https://www.youtube.com/embed/OeVxmCtDCSo'
     },
     {
         id: 't-1',
