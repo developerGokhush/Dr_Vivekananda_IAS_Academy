@@ -172,21 +172,21 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/Laxmi Rachana on ranking AIR 178 in UPSC.jpg',
         desc: 'Podcast Laxmi Rachana on ranking AIR 178 in UPSC',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/watch?v=Sv9N8nBMxyk'
+        videoUrl: 'https://www.youtube.com/embed/Sv9N8nBMxyk?si=TLXqfWNJ4Yu2wI2-'
     },
     {
         id: 'p-6',
         image: '/assets/gallery/Pratyusha Katta UPSC AIR-903.jpg',
         desc: 'Podcast with Pratyusha Katta UPSC AIR-903',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/watch?v=eYXoKJJjpyM'
+        videoUrl: 'https://www.youtube.com/embed/eYXoKJJjpyM?si=Tr_Tq8AGAagi39P3'
     },
     {
         id: 'p-7',
         image: '/assets/gallery/Prachet DSK UPSC AIR-193.jpg',
         desc: 'Podcast with Prachet DSK UPSC AIR-193',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/watch?v=Am8MKg5wit8&t=69s'
+        videoUrl: 'https://www.youtube.com/embed/Am8MKg5wit8?si=xnWfOpOOWDaNzsAd'
     },
     {
         id: 'p-1',
