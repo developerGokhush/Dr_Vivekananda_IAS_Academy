@@ -15,7 +15,7 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 't-12',
-        image: '/assets/gallery/PrachetDSK.jpg',
+        image: '/assets/gallery/PrachetDSK1.jpg',
         desc: 'With Prachet DSK(AIR - 193)',
         tag: 'Toppers'
     },
