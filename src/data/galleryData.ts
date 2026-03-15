@@ -169,7 +169,7 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'p-5',
-        image: '/assets/gallery/Laxmi Rachana on ranking AIR 178 in UPSC.jpg',
+        image: '/assets/gallery/Laxmi Rachana on ranking AIR 178 in UPSC1.jpg',
         desc: 'Podcast Laxmi Rachana on ranking AIR 178 in UPSC',
         tag: 'Podcasts',
         videoUrl: 'https://www.youtube.com/embed/Sv9N8nBMxyk?si=TLXqfWNJ4Yu2wI2-'
