@@ -113,7 +113,7 @@ export const galleryData: GalleryItem[] = [
         tag: 'Public Events'
     },
     {
-        id: 't-9',
+        id: 't-999',
         image: '/assets/gallery/toppers/With Mr Shashikanth Korravath IRS.jpeg',
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
