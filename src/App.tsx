@@ -8,6 +8,7 @@ import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import Courses from './pages/Courses';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import CopyrightsPolicy from './pages/CopyrightsPolicy';
 import NotFound from './pages/NotFound';
 import CourseDetails from './pages/CourseDetails';
 import Director from './pages/Director';
@@ -66,6 +67,8 @@ function App() {
                 <Route path="/director" element={<Director />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/copyright" element={<CopyrightsPolicy />} />
+                <Route path="/policy" element={<PrivacyPolicy />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/blogs" element={<BlogListing />} />
