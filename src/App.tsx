@@ -33,6 +33,8 @@ import BlogListing from './pages/BlogListing';
 import BlogDetails from './pages/BlogDetails';
 import TopperNotes from './pages/TopperNotes';
 import Accolades from './pages/Accolades';
+import WebinarAnthropology from './pages/WebinarAnthropology';
+import WebinarSociology from './pages/WebinarSociology';
 
 // Initialize Google Analytics using the real measurement ID
 // This matches the tag inserted in index.html
@@ -75,6 +77,8 @@ function App() {
                 <Route path="/blogs/:id" element={<BlogDetails />} />
                 <Route path="/topper-notes" element={<TopperNotes />} />
                 <Route path="/accolades" element={<Accolades />} />
+                <Route path="/webinar/anthropology" element={<WebinarAnthropology />} />
+                <Route path="/webinar/sociology" element={<WebinarSociology />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
