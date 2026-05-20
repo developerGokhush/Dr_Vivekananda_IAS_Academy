@@ -193,7 +193,7 @@ const WebinarAnthropology = () => {
                     <div className="container">
                         <div className="hero-content-wrapper">
                             <div className="details-hero-text">
-                                <h1>Free Webinar Anthropology Dr Vivekananda's IAS Academy HEADLINE</h1>
+                                <h1>Free Webinar Anthropology Dr Vivekananda's IAS Academy </h1>
 
                                 <div className="rating-wrap">
                                     <span className="stars">★★★★★</span>
@@ -220,7 +220,7 @@ const WebinarAnthropology = () => {
                                 <div className="details-badges">
                                     <span className="badge"><User size={16} /> {course.faculty}</span>
                                     <span className="badge"><Clock size={16} /> {course.duration}</span>
-                                    <span className="badge"><Calendar size={16} /> {course.date}</span>
+                                    
                                 </div>
                             </div>
 
@@ -362,7 +362,7 @@ const WebinarAnthropology = () => {
                             <h2>Taught By The Best</h2>
                             <div className="instructor-full-card">
                                 <div className="instructor-avatar-large">
-                                    <img src="/assets/images/director3.jpeg" alt={course.faculty} />
+                                    <img src="/assets/images/director1.jpg" alt={course.faculty} />
                                 </div>
                                 <div className="instructor-content-wide">
                                     <div className="instructor-header-wide">
