@@ -237,6 +237,46 @@ const WebinarAnthropology = () => {
                         </div>
                     </div>
                 </section>
+       
+
+                {/* Taught By The Best */}
+                        <div className="instructors-section">
+                            <h2>Taught By The Best</h2>
+                            <div className="instructor-full-card">
+                                <div className="instructor-avatar-large">
+                                    <img src="/assets/images/directors1.jpg" alt={course.faculty} />
+                                </div>
+                                <div className="instructor-content-wide">
+                                    <div className="instructor-header-wide">
+                                        <div className="instructor-badges-row">
+                                            <span className="instructor-badge">Lead Faculty</span>
+                                        </div>
+                                        <h3>{course.faculty}</h3>
+                                        <p className="instructor-title">Director, Dr. Vivekananda's IAS Academy</p>
+                                    </div>
+
+                                    <div className="instructor-stats-row">
+                                        <div className="instructor-stat-item">
+                                            <Award size={18} />
+                                            <span><strong>7+ Years</strong> Teaching Experience</span>
+                                        </div>
+                                        <div className="instructor-stat-item">
+                                            <Award size={18} />
+                                            <span><strong>85+ Ranks</strong> Produced in 4 Years</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="instructor-quote-wide">
+                                        <p>"{course.faculty} is dedicated to providing strategic, result-oriented mentoring to help aspirants master their optional subjects and secure top ranks in the UPSC civil services examination."</p>
+                                    </div>
+                                    <div className="instructor-action-wide">
+                                        <Link to={`/director`} className="btn-view-profile-solid">
+                                            View Full Profile &rarr;
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                 <section className="details-main-content">
                     <div className="container">
