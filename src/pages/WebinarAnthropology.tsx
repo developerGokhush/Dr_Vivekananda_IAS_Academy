@@ -241,7 +241,7 @@ const WebinarAnthropology = () => {
 
                 {/* Taught By The Best */}
                         <div className="instructors-section">
-                            <h2>Taught By The Best</h2>
+                            <h2>Taught By The Best.</h2>
                             <div className="instructor-full-card">
                                 <div className="instructor-avatar-large">
                                     <img src="/assets/images/directors1.jpg" alt={course.faculty} />
