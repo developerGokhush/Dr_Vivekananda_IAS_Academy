@@ -205,13 +205,13 @@ const WebinarAnthropology = () => {
                                 <div className="hero-actions">
                                     <button
                                         className="optional-courses-btn-primary"
-                                        onClick={() => window.open("https://forms.gle/xhF7LmAe6cCMPfye8", "_blank")}
+                                        onClick={() => window.open("https://forms.gle/E6mMk7FgjMVDvFsbA", "_blank")}
                                     >
                                         Enroll Now
                                     </button>
                                     <button
                                         className="optional-courses-btn-secondary"
-                                        onClick={() => window.open("https://forms.gle/xhF7LmAe6cCMPfye8", "_blank")}
+                                        onClick={() => window.open("https://wa.me/8978561935", "_blank")}
                                     >
                                         Enquire Now
                                     </button>
