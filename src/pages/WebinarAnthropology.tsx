@@ -362,7 +362,7 @@ const WebinarAnthropology = () => {
                             <h2>Taught By The Best</h2>
                             <div className="instructor-full-card">
                                 <div className="instructor-avatar-large">
-                                    <img src="/assets/images/director1.jpg" alt={course.faculty} />
+                                    <img src="/assets/images/directors1.jpg" alt={course.faculty} />
                                 </div>
                                 <div className="instructor-content-wide">
                                     <div className="instructor-header-wide">
