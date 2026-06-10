@@ -69,7 +69,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/images/as9943.jpg',
         desc: 'From IIT Student to IPS Officer 😲 | Do you know the real struggle? 🚔🔥 | Dr Vivekananda’s IAS Academy',
         tag: 'Podcasts',
-        videoUrl: 'https://youtu.be/vnhF4SevXR8?si=J7V_TGX01ePldNqo'
+        videoUrl: 'https://www.youtube.com/embed/vnhF4SevXR8?si=_7Bqh3G1awH3nrs9'
     },
     {
         id: 't-4',
@@ -90,11 +90,11 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
-        id: 'p-11',
-        image: '/assets/images/as994313.jpg',
+        id: 'p-11323',
+        image: '/assets/images/wis333.jpg',
         desc: 'పేరెంట్స్ సపోర్ట్ లేకుండా IAS సాధ్యమా? 😳 విజయవాడ అమ్మాయి సంచలన విజయం 🔥 | Dr Vivekananda IAS',
         tag: 'Podcasts',
-        videoUrl: 'https://youtu.be/xELk9AmdMcY?si=0r0CHaIG88c8SRGC'
+        videoUrl: 'https://www.youtube.com/embed/DZLFO16PAe0?si=8A7sLE5uq6VvmLh5' 
     },
     {
         id: 't-7',
@@ -113,7 +113,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/images/as99432.jpg',
         desc: 'Software Engineer to Deputy Collector 🚀 UPSC Success Story | Dr Vivekananda’s IAS Academy',
         tag: 'Podcasts',
-        videoUrl: 'https://youtu.be/ditGY5uV8VU?si=ivpw54KRQMWDMME5'
+        videoUrl: 'https://www.youtube.com/embed/ditGY5uV8VU?si=xyD8I_NjeFe2HdlM'
     },
     {
         id: 't-9',
@@ -123,10 +123,10 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'p-11',
-        image: '/assets/images/as99432.jpg',
+        image: '/assets/images/as994313.jpg',
         desc: 'UPSC CSE AIR 123 Atla Tharun Teja నేను IAS అవ్వడానికి అసలు REASON ఇదే!🔥 Dr Vivekananda’s IAS Academy',
         tag: 'Podcasts',
-        videoUrl: 'https://youtu.be/xELk9AmdMcY?si=0r0CHaIG88c8SRGC'
+        videoUrl: 'https://www.youtube.com/embed/xELk9AmdMcY?si=36LKxnuZAxDEJPYT'
     },
     {
         id: 't-10',
@@ -194,7 +194,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/images/as223.jpg',
         desc: '3 సార్లు UPSC Prelims Fail ఇప్పుడు IRS Officer UPSC CSE2026 Aspirants Must Watch Dr Vivekananda IAS',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/embed/Sv9N8nBMxyk?si=TLXqfWNJ4Yu2wI2-'
+        videoUrl: 'https://www.youtube.com/embed/4HD4rKnjZLY?si=KTu_ZJ_cLX_l8Ux9'
     },
 
     {
