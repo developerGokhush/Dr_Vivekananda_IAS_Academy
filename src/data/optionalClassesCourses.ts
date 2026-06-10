@@ -77,7 +77,7 @@ export const optionalClassesCourses: CourseData[] = [
                 ]
             }
         ],
-        image: '/assets/images/anthropology.png',
+        image: '/assets/images/anthropology.jpg',
         alt: 'Anthropology Optional Foundation Course',
         seoTitle: 'Best Anthropology Optional Coaching in Hyderabad',
         seoDescription: 'Dr. Vivekananda’s IAS Academy provides the most comprehensive Anthropology coaching in Hyderabad. With expert faculty, personalized mentorship, and a proven track record of success, we help aspirants master the subject and secure top ranks in UPSC Civil Services.'

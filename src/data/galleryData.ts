@@ -83,6 +83,13 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 'p-11',
+        image: '/assets/images/as994313.jpg',
+        desc: 'పేరెంట్స్ సపోర్ట్ లేకుండా IAS సాధ్యమా? 😳 విజయవాడ అమ్మాయి సంచలన విజయం 🔥 | Dr Vivekananda IAS',
+        tag: 'Podcasts',
+        videoUrl: 'https://youtu.be/xELk9AmdMcY?si=0r0CHaIG88c8SRGC'
+    },
+    {
         id: 't-7',
         image: '/assets/gallery/toppers/With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.png',
         desc: 'With Bhuvana Pranith Pappula Officer on Special Duty (OSD) in the Public Works Department (PWD) of the West Bengal government.',
@@ -95,10 +102,24 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 'p-10',
+        image: '/assets/images/as99431.jpg',
+        desc: 'Software Engineer to Deputy Collector 🚀 UPSC Success Story | Dr Vivekananda’s IAS Academy',
+        tag: 'Podcasts',
+        videoUrl: 'https://youtu.be/ditGY5uV8VU?si=ivpw54KRQMWDMME5'
+    },
+    {
         id: 't-9',
         image: '/assets/gallery/toppers/Mr. Kanala Sangeeth Madhur.jpg',
         desc: 'Mr. Kanala Sangeeth Madhur, SDM / RDO, Bheemunipatnam Division, Visakhapathnam',
         tag: 'Toppers'
+    },
+    {
+        id: 'p-11',
+        image: '/assets/images/as99432.jpg',
+        desc: 'UPSC CSE AIR 123 Atla Tharun Teja నేను IAS అవ్వడానికి అసలు REASON ఇదే!🔥 Dr Vivekananda’s IAS Academy',
+        tag: 'Podcasts',
+        videoUrl: 'https://youtu.be/xELk9AmdMcY?si=0r0CHaIG88c8SRGC'
     },
     {
         id: 't-10',
@@ -117,6 +138,13 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/toppers/With Mr Shashikanth Korravath IRS.jpeg',
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
+    },
+    {
+        id: 'p-9',
+        image: '/assets/images/as9943.jpg',
+        desc: 'From IIT Student to IPS Officer 😲 | Do you know the real struggle? 🚔🔥 | Dr Vivekananda’s IAS Academy',
+        tag: 'Podcasts',
+        videoUrl: 'https://youtu.be/vnhF4SevXR8?si=J7V_TGX01ePldNqo'
     },
     {
         id: 'tm-1',
@@ -160,6 +188,14 @@ export const galleryData: GalleryItem[] = [
         tag: 'Testimonials',
         videoUrl: 'https://www.youtube.com/embed/Gg_E7MVb-aA'
     },
+    {
+        id: 'p-8',
+        image: '/assets/images/as223.jpg',
+        desc: '3 సార్లు UPSC Prelims Fail ఇప్పుడు IRS Officer UPSC CSE2026 Aspirants Must Watch Dr Vivekananda IAS',
+        tag: 'Podcasts',
+        videoUrl: 'https://www.youtube.com/embed/Sv9N8nBMxyk?si=TLXqfWNJ4Yu2wI2-'
+    },
+
     {
         id: 'tm-7',
         image: '/assets/gallery/Navpada Ashritha Air 315.png',
