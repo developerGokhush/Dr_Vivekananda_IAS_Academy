@@ -65,6 +65,13 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 'p-9',
+        image: '/assets/images/as9943.jpg',
+        desc: 'From IIT Student to IPS Officer 😲 | Do you know the real struggle? 🚔🔥 | Dr Vivekananda’s IAS Academy',
+        tag: 'Podcasts',
+        videoUrl: 'https://youtu.be/vnhF4SevXR8?si=J7V_TGX01ePldNqo'
+    },
+    {
         id: 't-4',
         image: '/assets/gallery/toppers/With Chaitanya Reddy IPS Addl Superintendent of Police, Kamareddy.jpeg',
         desc: 'With Chaitanya Reddy IPS Addl Superintendent of Police, Kamareddy',
@@ -103,7 +110,7 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'p-10',
-        image: '/assets/images/as99431.jpg',
+        image: '/assets/images/as99432.jpg',
         desc: 'Software Engineer to Deputy Collector 🚀 UPSC Success Story | Dr Vivekananda’s IAS Academy',
         tag: 'Podcasts',
         videoUrl: 'https://youtu.be/ditGY5uV8VU?si=ivpw54KRQMWDMME5'
@@ -139,13 +146,7 @@ export const galleryData: GalleryItem[] = [
         desc: 'With Mr Shashikanth Korravath IRS',
         tag: 'Toppers'
     },
-    {
-        id: 'p-9',
-        image: '/assets/images/as9943.jpg',
-        desc: 'From IIT Student to IPS Officer 😲 | Do you know the real struggle? 🚔🔥 | Dr Vivekananda’s IAS Academy',
-        tag: 'Podcasts',
-        videoUrl: 'https://youtu.be/vnhF4SevXR8?si=J7V_TGX01ePldNqo'
-    },
+    
     {
         id: 'tm-1',
         image: '/assets/gallery/Dr krishna Air 155.png',
