@@ -43,7 +43,7 @@ export const optionalMentorshipCourses: CourseData[] = [
         title: 'Parishrama (Basic)',
         subtitle: 'Anthropology long term Mentorship programme with test series',
         faculty: 'Dr G. Vivekananda',
-        date: 'To be announced soon',
+        date: 'Admissions open',
         duration: '6 months intensive training',
         fee: 'To be announced',
         features: [
@@ -55,7 +55,7 @@ export const optionalMentorshipCourses: CourseData[] = [
             'Daily reporting to the mentor on the number of hours allotted to Anthropology.',
             'Access to 50 hrs of recorded sessions on Anthropology PYQs (Samagra).'
         ],
-        image: '/assets/images/anthropology-mentorship.png'
+        image: '/assets/images/anthropology-parishram.jpg'
     },
     {
         id: 'samarpan',

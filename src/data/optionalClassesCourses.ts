@@ -28,7 +28,7 @@ export const optionalClassesCourses: CourseData[] = [
         title: 'Anthropology Foundation',
         subtitle: 'Comprehensive 250+ Hrs Module',
         faculty: 'Dr G. Vivekananda',
-        date: 'Starts from April 4th',
+        date: 'Admissions open',
         duration: '250Hrs',
         fee: 'To be announced',
         discount: '10% discount for Women, SC and ST, EBC and Differently abled Aspirants',
@@ -87,7 +87,7 @@ export const optionalClassesCourses: CourseData[] = [
         title: 'Sociology Foundation',
         subtitle: 'Complete UPSC Syllabus coverage',
         faculty: 'Dr G. Vivekananda',
-        date: 'To be announced soon',
+        date: 'Admissions open',
         duration: '250Hrs',
         fee: 'To be announced',
         discount: '10% discount for Women, SC and ST, EBC and Differently abled Aspirants',
@@ -136,7 +136,7 @@ export const optionalClassesCourses: CourseData[] = [
                 ]
             }
         ],
-        image: '/assets/images/sociology.png',
+        image: '/assets/images/sociology.jpg',
         alt: 'Sociology Optional Foundation Course',
         seoTitle: 'Best Sociology Optional Coaching in Hyderabad',
         seoDescription: 'Join the best Sociology optional coaching in Hyderabad at Dr. Vivekananda’s IAS Academy. Our program offers complete syllabus coverage, answer writing practice, and expert guidance to help you maximize your score in the Civil Services Examination.'
