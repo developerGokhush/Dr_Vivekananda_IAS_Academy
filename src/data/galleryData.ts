@@ -129,6 +129,14 @@ export const galleryData: GalleryItem[] = [
         videoUrl: 'https://www.youtube.com/embed/xELk9AmdMcY?si=36LKxnuZAxDEJPYT'
     },
     {
+        id: 'pe-2193',
+        image: '/assets/gallery/w2lEss.jpg',
+        desc: 'Write to LEAD Essay Competition for UPSC Civil Services Aspirants',
+        tag: 'Public Events'
+    },
+
+
+    {
         id: 't-10',
         image: '/assets/gallery/toppers/Ashok V. Dibbada.jpg',
         desc: 'Mr.Ashok V. Dibbada Indian Foreign Service (IFS). Third Secretary (E&C) Embassy of India in Moscow, Russia.',
