@@ -45,7 +45,7 @@ export const optionalMentorshipCourses: CourseData[] = [
         faculty: 'Dr G. Vivekananda',
         date: 'Admissions open',
         duration: '6 months intensive training',
-        fee: 'To be announced',
+        fee: 'Now Open for Admissions',
         features: [
             'Daily PYQs plus FYQs Answer writing practice according to a fixed schedule with Evaluation.',
             'Forty five minutes, one on one Session, with Dr Vivekananda Sir in the beginning itself to identify past mistakes, strengths and accordingly design preparation.',
