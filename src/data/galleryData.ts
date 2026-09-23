@@ -131,7 +131,7 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'pe-2000',
         image: '/assets/gallery/super-image.jpeg',
-        desc: 'Anthropology in Real LifeTribal Museum Tour Hyderabad UPSC Anthropology Optional DrVivekananda's IAS',
+        desc: "Anthropology in Real LifeTribal Museum Tour Hyderabad UPSC Anthropology Optional DrVivekananda's IAS",
         tag: 'Public Events'
     },
     {
