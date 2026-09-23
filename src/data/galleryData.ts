@@ -129,6 +129,12 @@ export const galleryData: GalleryItem[] = [
         videoUrl: 'https://www.youtube.com/embed/xELk9AmdMcY?si=36LKxnuZAxDEJPYT'
     },
     {
+        id: 'pe-2000',
+        image: '/assets/gallery/super-image.jpeg',
+        desc: 'Anthropology in Real LifeTribal Museum Tour Hyderabad UPSC Anthropology Optional DrVivekananda's IAS',
+        tag: 'Public Events'
+    },
+    {
         id: 'pe-2193',
         image: '/assets/gallery/w2lEss.jpg',
         desc: 'Write to LEAD Essay Competition for UPSC Civil Services Aspirants',
