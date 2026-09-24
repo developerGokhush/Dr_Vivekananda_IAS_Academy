@@ -10,7 +10,7 @@ export const galleryData: GalleryItem[] = [
     {
         id: 't-13',
         image: '/assets/gallery/Mr Praveen Dainampally DySP.jpg',
-        desc: 'With Mr Praveen Dainampally DySP ',
+        desc: 'With Mr Praveen Dainampally DySP',
         tag: 'Toppers'
     },
     {
