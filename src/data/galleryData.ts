@@ -37,7 +37,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/Harshitha Medara (2).jpg',
         desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/LlCC2VALtZM'
+        videoUrl: 'https://youtube.com/embed/vMNnetcAoc0?feature=share'
     },
     {
         id: 'tm-10',
