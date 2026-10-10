@@ -180,7 +180,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/K Srinivasulu Air 526.png',
         desc: 'K Srinivasulu Air 526 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/woMc4QbUwW4'
+        videoUrl: 'https://youtube.com/shorts/RH3u5mTxElo?si=D2BLTQKvGhiTr8dP
     },
     {
         id: 'tm-4',
