@@ -237,7 +237,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/Prachet DSK UPSC AIR-193.jpg',
         desc: 'Podcast with Prachet DSK UPSC AIR-193',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/embed/Am8MKg5wit8?si=xnWfOpOOWDaNzsAd'
+        videoUrl: 'https://www.youtube.com/embed/vnhF4SevXR8?si=SbRR6AzTBqAZsbhr'
     },
     {
         id: 'p-1',
