@@ -20,6 +20,13 @@ export const galleryData: GalleryItem[] = [
         tag: 'Toppers'
     },
     {
+        id: 'tm-20',
+        image: '/assets/gallery/Atla Tharun Teja1.jpg',
+        desc: 'UPSC AIR 580 Success Story NAGA BHARATH UPSC Topper Testimonial Dr Vivekananda’s IAS Academy',
+        tag: 'Testimonials',
+        videoUrl: 'https://www.youtube.com/embed/PUCFrF3DH_Y'
+    },
+    {
         id: 't-11',
         image: '/assets/gallery/PratyushaKatta.jpg',
         desc: 'With Pratyusha Katta (AIR - 908)',
