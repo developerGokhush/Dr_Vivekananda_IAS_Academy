@@ -37,14 +37,14 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/Atla Tharun Teja1.jpg',
         desc: 'Atla Tharun Teja, securing AIR 123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/rAW-7VRwTng'
+        videoUrl: 'https://www.youtube.com/embed/lWn5ULo76PM'
     },
     {
         id: 'tm-9',
         image: '/assets/gallery/Harshitha Medara (2).jpg',
         desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/LlCC2VALtZM'
+        videoUrl: 'https://youtube.com/embed/vMNnetcAoc0?feature=share'
     },
     {
         id: 'tm-10',
@@ -187,7 +187,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/K Srinivasulu Air 526.png',
         desc: 'K Srinivasulu Air 526 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/woMc4QbUwW4'
+        videoUrl: 'https://youtube.com/embed/RH3u5mTxElo?si=D2BLTQKvGhiTr8dP'
     },
     {
         id: 'tm-4',
@@ -244,7 +244,7 @@ export const galleryData: GalleryItem[] = [
         image: '/assets/gallery/Prachet DSK UPSC AIR-193.jpg',
         desc: 'Podcast with Prachet DSK UPSC AIR-193',
         tag: 'Podcasts',
-        videoUrl: 'https://www.youtube.com/embed/Am8MKg5wit8?si=xnWfOpOOWDaNzsAd'
+        videoUrl: 'https://www.youtube.com/embed/vnhF4SevXR8?si=SbRR6AzTBqAZsbhr'
     },
     {
         id: 'p-1',
