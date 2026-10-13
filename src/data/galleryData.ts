@@ -35,7 +35,7 @@ export const galleryData: GalleryItem[] = [
     {
         id: 'tm-8',
         image: '/assets/gallery/Atla Tharun Teja1.jpg',
-        desc: 'Atla Tharun Teja, securing AIR 123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        desc: 'Atla Tharun Teja, securing AIR-123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
         videoUrl: 'https://www.youtube.com/embed/lWn5ULo76PM'
     },
