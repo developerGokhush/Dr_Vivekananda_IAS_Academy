@@ -21,7 +21,7 @@ export const galleryData: GalleryItem[] = [
     },
     {
         id: 'tm-20',
-        image: '/assets/gallery/Atla Tharun Teja1.jpg',
+        image: '/assets/gallery/UPSC AIR 580 Success Story NAGA BHARATH UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
         desc: 'UPSC AIR 580 Success Story NAGA BHARATH UPSC Topper Testimonial Dr Vivekananda’s IAS Academy',
         tag: 'Testimonials',
         videoUrl: 'https://www.youtube.com/embed/PUCFrF3DH_Y'
@@ -34,18 +34,111 @@ export const galleryData: GalleryItem[] = [
     },
  
     {
-        id: 'tm-9',
-        image: '/assets/gallery/Harshitha Medara (2).jpg',
-        desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+      id: 'tm-8',
+        image: '/assets/gallery/UPSC AIR 123 Success Story 🔥Atla Tharunteja UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.bmp',
+        desc: 'Atla Tharun Teja, securing AIR 123 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://youtube.com/embed/vMNnetcAoc0?feature=share'
+        videoUrl: 'https://youtube.com/embed/lWn5ULo76PM?si=pnOqq-EXIyda8SAA'
     },
     {
-        id: 'tm-10',
-        image: '/assets/gallery/praveen.jpg',
+      id: 'tm-9',
+        image: '/assets/gallery/Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram.jpg',
+        desc: 'Harshitha Medara, securing AIR 520 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/ENC9ElH-iRg?si=UhLX3XR1dE6dsKnH'
+    },
+    {
+       id: 'tm-10',
+        image: '/assets/gallery/UPSC AIR 793 Success Story Praveen Dainampally UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Dainampally Dysp on securing AIR 793 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/OeVxmCtDCSo'
+        videoUrl: 'https://youtube.com/embed/atcSnKD1gX0?si=ynh3ngrq66FHdYu-'
+
+    },
+    {
+        id: 'tm-31',
+        image: '/assets/gallery/UPSC AIR 580 Success Story NAGA BHARATH UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
+        desc: 'NAGA BHARATH on securing AIR 580 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/PUCFrF3DH_Y?si=xN5QM1lDQpSC-KNG-'
+
+    },
+    {
+        id: 'tm-32',
+        image: '/assets/gallery/UPSC AIR 193 Success Story 🔥 Prachet DSK UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: ' Prachet DSK on securing AIR 193 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/o4WoyiirVHw?si=SSgxpNI8IB89Wukc-'
+    },
+    {
+        id: 'tm-34',
+        image: '/assets/gallery/UPSC AIR 908 Success Story Dr. Katta Prathyusha UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Dr. Katta Prathyusha on securing AIR 908 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/KovWjbA1FnI?si=1Mdw4FeptT1FeGzU-'
+    },
+    {
+        id: 'tm-35',
+        image: '/assets/gallery/UPSC AIR 55 Success Story 🔥 Srujana Gudelli UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Srujana Gudelli on securing AIR 55 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/xe1Xm_TDe_w?si=A2Quckt65H7_Rjhh-'
+    },
+    {
+        id: 'tm-36',
+        image: '/assets/gallery/UPSC AIR 510 Success Story 🔥Bhuvana Pranith UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Bhuvana Pranith on securing AIR 510 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/Mc5AS2_HEhY?si=_0ZIT3XmS3CXzR_g-'
+    },
+    {
+        id: 'tm-37',
+        image: '/assets/gallery/UPSC AIR 93 Success Story 🔥Ch. Yashwanth UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Ch. Yashwanth on securing AIR 93 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/q-5qOm3yLbk?si=T6QZz0Lh4ftqFmrv-'
+    },
+    {
+        id: 'tm-38',
+        image: '/assets/gallery/UPSC AIR 263 Success Story 🔥A C Preethi UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  A C Preethi on securing AIR 263 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/M8ybxaN3fWA?si=8BD4-LcwkXUMU6kl-'
+    },
+    {
+        id: 'tm-39',
+        image: '/assets/gallery/UPSC AIR 60 Success Story 🔥Pranav IAS UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Pranav IAS on securing AIR 60 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/_N2uz-nbFrc?si=PG1gJPi3idzna1Ba-'
+    },
+    {
+        id: 'tm-40',
+        image: '/assets/gallery/UPSC AIR 173 Success Story 🔥 Penkeesu Dheeraj UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Penkeesu Dheeraj on securing AIR 173 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/VjwwdPz-MDo?si=S8Bica_bXJ9LDoRZ-'
+    },
+    {
+        id: 'tm-41',
+        image: '/assets/gallery/UPSC AIR 28 Success Story 🔥 Mourya Bharadwaj UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Mourya Bharadwaj on securing AIR 28 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/rl5fYbQAFY0?si=T2VIQT6KSrU7QFb9-'
+    },
+    {
+        id: 'tm-42',
+        image: '/assets/gallery/UPSC AIR 798 Success Story 🔥Sai Bhargav UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Sai Bhargav on securing AIR 798 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/92QBnkjS1aE?si=kz3zxnogveT099N4-'
+    },
+    {
+        id: 'tm-43',
+        image: 'assets/gallery/UPSC AIR 68 Success Story 🔥Sai Chaitanya Jadhav UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
+        desc: '  Sai Chaitanya Jadhav on securing AIR 68 in UPSC Sharing Experience with Dr. Vivekananda Gadiyaram',
+        tag: 'Testimonials',
+        videoUrl: 'https://youtube.com/embed/_GXILestuFc?si=29WSmCwWKUl-T2vL-'
     },
     {
         id: 't-1',
@@ -163,46 +256,51 @@ export const galleryData: GalleryItem[] = [
     },
     
     {
-        id: 'tm-1',
-        image: '/assets/gallery/Dr krishna Air 155.png',
+         id: 'tm-1',
+        image: '/assets/gallery/UPSC AIR 155 Success Story 🔥Dr. Krishna UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Dr krishna Air 155 (2025) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/lHlvCOdxWGc?si=ZPv7Ew9rdAtWyjN1'
+        videoUrl: 'https://youtube.com/embed/zCdMAEObiiQ?si=M2Eq_yNaQrk6VaCA'
+
     },
     {
         id: 'tm-2',
-        image: '/assets/gallery/Benjo P. Jose Air 59.png',
+        image: '/assets/gallery/UPSC AIR 59 Success Story 🔥Benjo P. Jose UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Benjo P. Jose Air 59 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/PHgrKsMPmiU?si=m2zroJrXhoVIQh-H'
+        videoUrl: 'https://youtube.com/embed/zgHTmUC_wQU?si=cXemX63qf1ol6J3h'
+
     },
     {
         id: 'tm-3',
-        image: '/assets/gallery/K Srinivasulu Air 526.png',
+        image: '/assets/gallery/UPSC AIR 526 Success Story 🔥 K. Srinivasulu UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
         desc: 'K Srinivasulu Air 526 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://youtube.com/embed/RH3u5mTxElo?si=D2BLTQKvGhiTr8dP'
+        videoUrl: 'https://youtube.com/embed/RH3u5mTxElo?si=t_ZBzBH_cMDJpKEg'
     },
     {
-        id: 'tm-4',
-        image: '/assets/gallery/Sahana Air 739.png',
+       id: 'tm-4',
+        image: '/assets/gallery/UPSC AIR 739 Success Story 🔥Sahana UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Sahana Air 739 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/kEjxUL7iTY4'
+        videoUrl: 'https://youtube.com/embed/TB7Nl6LGGNQ?si=2Ke_aJVDutqN2u2Z'
+
     },
     {
-        id: 'tm-5',
-        image: '/assets/gallery/Dr Vineeth Air 169.png',
+         id: 'tm-5',
+        image: '/assets/gallery/UPSC AIR 169 Success Story 🔥Dr. Vineeth UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Dr Vineeth Air 169 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/7dv-01BLNj0'
+        videoUrl: 'https://youtube.com/embed/M-BuDZ1B_Dw?si=7z5m9p_K6L-otz8n'
+
     },
     {
-        id: 'tm-6',
-        image: '/assets/gallery/K Pranay Kumar Air 554.png',
+       id: 'tm-6',
+        image: '/assets/gallery/UPSC AIR 554 Success Story 🔥 K. Pranay Kumar UPSC Topper Testimonial Dr Vivekananda’s IAS Academy.jpg',
         desc: 'K Pranay Kumar Air 554 (UPSC 2023) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/Gg_E7MVb-aA'
+        videoUrl: 'https://youtube.com/embed/NX6qKfLkE6Y?si=tERiZHwlAKmQVfNC'
+
     },
     {
         id: 'p-8',
@@ -213,11 +311,12 @@ export const galleryData: GalleryItem[] = [
     },
 
     {
-        id: 'tm-7',
-        image: '/assets/gallery/Navpada Ashritha Air 315.png',
+       id: 'tm-7',
+        image: '/assets/gallery/UPSC AIR 315 Success Story 🔥Navpada Ashritha UPSC Topper Testimonial  Dr Vivekananda’s IAS Academy.jpg',
         desc: 'Navpada Ashritha Air 315 (UPSC 2022) Experience with Dr. Vivekananda Gadiyaram',
         tag: 'Testimonials',
-        videoUrl: 'https://www.youtube.com/embed/0ELKcNfXYHE'
+        videoUrl: 'https://youtube.com/embed/5dSZ5PnriTg?si=S6rPmLMgHrcmqWw5'
+
     },
     {
         id: 'p-5',
